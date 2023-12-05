@@ -8,7 +8,7 @@ import { LoginComponent } from './components/login/login.component';
 import { InvoicesComponent } from './components/dashboard/invoices/invoices.component';
 import { ClientsComponent } from './components/dashboard/clients/clients.component';
 import { MainComponent } from './components/dashboard/main/main.component';
-
+import { DashboardModule } from './components/dashboard/dashboard/dashboard.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,13 +16,10 @@ import { MainComponent } from './components/dashboard/main/main.component';
     LoginComponent,
     InvoicesComponent,
     ClientsComponent,
-    MainComponent
+    MainComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, DashboardModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
