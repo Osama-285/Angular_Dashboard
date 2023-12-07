@@ -9,11 +9,21 @@ import { InvoicesComponent } from './components/dashboard/invoices/invoices.comp
 import { ClientsComponent } from './components/dashboard/clients/clients.component';
 import { MainComponent } from './components/dashboard/main/main.component';
 import { DashboardModule } from './components/dashboard/dashboard/dashboard.module';
+import { HomeComponent } from './components/dashboard/home/home.component';
+import { InventoryComponent } from './components/dashboard/inventory/inventory.component';
+import { ProductComponent } from './components/dashboard/product/product.component';
+import { ChatComponent } from './components/dashboard/chat/chat.component';
+import { SettingsComponent } from './components/dashboard/settings/settings.component';
 @NgModule({
   declarations: [
     AppComponent,
     SignupComponent,
     LoginComponent,
+    HomeComponent,
+    InventoryComponent,
+    ProductComponent,
+    ChatComponent,
+    SettingsComponent,
     // InvoicesComponent,
     // ClientsComponent,
     // MainComponent,
