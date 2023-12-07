@@ -1,1 +1,10 @@
+<ul>
+  <li *ngFor="let navbar of adminNavBar">
+    <a routerLink="{{ navbar.url }}">
+      <span>{{ navbar.icon }}</span>
+      <span>{{ navbar.title }}</span>
+    </a>
+  </li>
+</ul>
+
 <router-outlet></router-outlet>

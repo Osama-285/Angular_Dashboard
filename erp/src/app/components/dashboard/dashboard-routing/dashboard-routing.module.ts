@@ -5,9 +5,14 @@ import { MainComponent } from '../main/main.component';
 import { ClientsComponent } from '../clients/clients.component';
 
 const routes: Routes = [
-  { path: 'main', component: MainComponent },
-  { path: 'dashboard/invoices', component: InvoicesComponent },
-  { path: 'dashboard/clients', component: ClientsComponent },
+  {
+    path: 'main',
+    component: MainComponent,
+    children: [
+      { path: 'invoices', component: InvoicesComponent },
+      { path: 'clients', component: ClientsComponent },
+    ],
+  },
 ];
 
 @NgModule({
