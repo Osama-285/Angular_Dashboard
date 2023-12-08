@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SignupComponent } from './components/signup/signup.component';
@@ -9,26 +8,28 @@ import { InvoicesComponent } from './components/dashboard/invoices/invoices.comp
 import { ClientsComponent } from './components/dashboard/clients/clients.component';
 import { MainComponent } from './components/dashboard/main/main.component';
 import { DashboardModule } from './components/dashboard/dashboard/dashboard.module';
-import { HomeComponent } from './components/dashboard/home/home.component';
-import { InventoryComponent } from './components/dashboard/inventory/inventory.component';
-import { ProductComponent } from './components/dashboard/product/product.component';
-import { ChatComponent } from './components/dashboard/chat/chat.component';
-import { SettingsComponent } from './components/dashboard/settings/settings.component';
+
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
     SignupComponent,
     LoginComponent,
-    HomeComponent,
-    InventoryComponent,
-    ProductComponent,
-    ChatComponent,
-    SettingsComponent,
+    // HomeComponent,
+    // InventoryComponent,
+    // ProductComponent,
+    // ChatComponent,
+    // SettingsComponent,
     // InvoicesComponent,
     // ClientsComponent,
     // MainComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, DashboardModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    DashboardModule,
+    ReactiveFormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
