@@ -2,7 +2,7 @@
 <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
   <label for="email">Email: </label>
   <input type="email" id="email" formControlName="email" />
-  <div *ngIf="submitted && loginForm.get('email')!.hasError('required')">
+  <div *ngIf="submitted && loginForm.get('email')!.hasError('emailRequired')">
     Email is required.
   </div>
   <div *ngIf="submitted && loginForm.get('email')!.hasError('email')">
@@ -10,7 +10,9 @@
   </div>
   <label for="password">Password: </label>
   <input type="password" id="password" formControlName="password" />
-  <div *ngIf="submitted && loginForm.get('password')!.hasError('required')">
+  <div
+    *ngIf="submitted && loginForm.get('password')!.hasError('passwordRequired')"
+  >
     Password is required.
   </div>
   <div *ngIf="submitted && loginForm.get('password')!.hasError('minlength')">

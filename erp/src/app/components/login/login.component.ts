@@ -23,9 +23,16 @@ export class LoginComponent implements OnInit {
   }
   onSubmit() {
     this.submitted = true;
+    if (this.loginForm.get('email')?.hasError('required')) {
+      this.loginForm.get('email')?.setErrors({ emailRequired: true });
+    }
+
+    if (this.loginForm.get('password')?.hasError('required')) {
+      this.loginForm.get('password')?.setErrors({ passwordRequired: true });
+    }
+
     if (this.loginForm.valid) {
       console.log('Form submitted', this.loginForm.value);
     }
-    console.log('Formm submitted', this.loginForm.value);
   }
 }
