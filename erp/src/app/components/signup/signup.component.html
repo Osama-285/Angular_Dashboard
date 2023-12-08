@@ -1,1 +1,11 @@
-<p>signup works!</p>
+<h2>Signup Form</h2>
+<form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+  <label for="firstName">First Name: </label>
+  <input type="text" id="firstName" formControlName="firstName" />
+  <label for="lastName">Last Name: </label>
+  <input type="text" id="lastName" formControlName="lasrName" />
+  <label for="email">Last Name: </label>
+  <input type="email" id="email" formControlName="email" />
+  <label for="password">Last Name: </label>
+  <input type="password" id="password" formControlName="password" />
+</form>
