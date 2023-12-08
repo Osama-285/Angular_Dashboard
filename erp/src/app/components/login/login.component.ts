@@ -12,16 +12,20 @@ import {
 })
 export class LoginComponent implements OnInit {
   loginForm!: FormGroup;
+  submitted = false;
+
   constructor(private fb: FormBuilder) {}
   ngOnInit() {
     this.loginForm = this.fb.group({
       email: ['', [Validators.required, Validators.email]],
-      passowrd: ['', [Validators.required, Validators.minLength(6)]],
+      password: ['', [Validators.required, Validators.minLength(6)]],
     });
   }
   onSubmit() {
+    this.submitted = true;
     if (this.loginForm.valid) {
       console.log('Form submitted', this.loginForm.value);
     }
+    console.log('Formm submitted', this.loginForm.value);
   }
 }
