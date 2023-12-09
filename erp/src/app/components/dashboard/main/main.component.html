@@ -1,3 +1,7 @@
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+/>
 <div class="main">
   <div class="navbar">
     <div class="logo">
@@ -7,8 +11,10 @@
       <ul>
         <li *ngFor="let navbar of adminNavBar">
           <a routerLink="{{ navbar.url }}">
-            <span>{{ navbar.icon }}</span>
-            <span>{{ navbar.title }}</span>
+            <span class="material-symbols-outlined icon">{{
+              navbar.icon
+            }}</span>
+            <span class="icon_text">{{ navbar.title }}</span>
           </a>
         </li>
       </ul>

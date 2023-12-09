@@ -1,9 +1,22 @@
 export const admin = [
-  { url: 'home', icon: 'icon', title: 'Home' },
-  { url: 'invoices', icon: 'icon', title: 'Invoices' },
-  { url: 'inventory', icon: 'icon', title: 'Inventory' },
-  { url: 'product', icon: 'icon', title: 'Product' },
-  { url: 'clients', icon: 'icon', title: 'Clients' },
-  { url: 'chat', icon: 'icon', title: 'Chat' },
-  { url: 'settings', icon: 'icon', title: 'Settings' },
+  {
+    url: 'home',
+    icon: 'home',
+    title: 'Home',
+  },
+  {
+    url: 'invoices',
+    icon: 'description',
+    title: 'Invoices',
+  },
+  { url: 'inventory', icon: 'inventory', title: 'Inventory' },
+  { url: 'product', icon: 'deployed_code', title: 'Product' },
+  { url: 'clients', icon: 'group', title: 'Clients' },
+  { url: 'chat', icon: 'chat', title: 'Chat' },
+  { url: 'settings', icon: 'settings', title: 'Settings' },
 ];
+// <span class="material-symbols-outlined">home</span>;
+// <span class="material-symbols-outlined">
+// local_shipping
+// </span>
+// <span class="material-symbols-outlined">description</span>;
