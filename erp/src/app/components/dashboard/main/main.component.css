@@ -51,6 +51,11 @@
   font-weight: 400;
   color: #7c8290;
 }
+
+.nav ul li a:hover {
+  background-color: #0560fd;
+  color: white;
+}
 .nav ul li a .icon {
   margin-left: 40px;
   margin-right: 8px;
