@@ -7,6 +7,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class SignupComponent implements OnInit {
   signupForm!: FormGroup;
+  validForm = false;
   constructor(private fb: FormBuilder) {}
   ngOnInit() {
     this.signupForm = this.fb.group({
@@ -16,5 +17,16 @@ export class SignupComponent implements OnInit {
       password: ['', [Validators.required, Validators.minLength(6)]],
     });
   }
-  onSubmit() {}
+  onSubmit() {
+    this.validForm = true;
+    if (this.signupForm.get('email')?.hasError('required')) {
+      this.signupForm.get('email')?.setErrors({ emailRequired: true });
+    }
+    if (this.signupForm.get('password')?.hasError('required')) {
+      this.signupForm.get('password')?.setErrors({ passwordRequired: true });
+    }
+    if (this.signupForm.valid) {
+      console.log('SignUp Form', this.signupForm.value);
+    }
+  }
 }
