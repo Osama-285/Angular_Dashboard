@@ -11,19 +11,7 @@ import { DashboardModule } from './components/dashboard/dashboard/dashboard.modu
 
 import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
-  declarations: [
-    AppComponent,
-    SignupComponent,
-    LoginComponent,
-    // HomeComponent,
-    // InventoryComponent,
-    // ProductComponent,
-    // ChatComponent,
-    // SettingsComponent,
-    // InvoicesComponent,
-    // ClientsComponent,
-    // MainComponent,
-  ],
+  declarations: [AppComponent, SignupComponent, LoginComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

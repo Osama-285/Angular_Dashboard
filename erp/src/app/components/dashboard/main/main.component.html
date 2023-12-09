@@ -1,10 +1,19 @@
-<ul>
-  <li *ngFor="let navbar of adminNavBar">
-    <a routerLink="{{ navbar.url }}">
-      <span>{{ navbar.icon }}</span>
-      <span>{{ navbar.title }}</span>
-    </a>
-  </li>
-</ul>
-
-<router-outlet></router-outlet>
+<div class="main">
+  <div class="navbar">
+    <div class="logo"></div>
+    <div class="nav">
+      <ul>
+        <li *ngFor="let navbar of adminNavBar">
+          <a routerLink="{{ navbar.url }}">
+            <span>{{ navbar.icon }}</span>
+            <span>{{ navbar.title }}</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="logout_btn"></div>
+  </div>
+  <div class="component_display">
+    <router-outlet></router-outlet>
+  </div>
+</div>
