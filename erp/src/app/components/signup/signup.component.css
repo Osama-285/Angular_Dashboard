@@ -58,6 +58,8 @@
   width: 100%;
   margin-bottom: 6px;
   /* border: none; */
+  color: #7c8290;
+  font-size: 15px;
   border: 1px solid #dce0e7;
   background-color: #f8f9fd;
   border-radius: 8px;
@@ -67,4 +69,5 @@
   outline: none !important;
   background-color: #f8f9fd;
   color: #7c8290;
+  font-size: 15px;
 }
