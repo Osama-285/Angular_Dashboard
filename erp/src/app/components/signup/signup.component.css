@@ -71,3 +71,27 @@
   color: #7c8290;
   font-size: 15px;
 }
+.signup .main_signup .form form .btn {
+  /* border: 1px solid red; */
+  margin-top: 10px;
+  height: 13%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.signup .main_signup .form form button {
+  width: 35%;
+  height: 40px;
+  font-size: 18px;
+  border: none;
+  background-color: #0560fd;
+  color: #f8f9fd;
+  border-radius: 8px;
+  letter-spacing: 1px;
+}
+
+.signup .main_signup .form form button:hover {
+  background-color: #f8f9fd;
+  color: #0560fd;
+  border: 1px solid #0560fd;
+}
