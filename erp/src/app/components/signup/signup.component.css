@@ -23,30 +23,48 @@
   color: #f8f9fd;
 }
 .signup .main_signup .form {
-  /* border: 1px solid rgb(157, 0, 255); */
   width: 60%;
   background-color: #f8f9fd;
-}
-/* .form {
-  width: 25%;
-  height: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f8f9fd;
-  border-radius: 15px;
+  padding: 20px 8px;
+  justify-content: center;
 }
-.form h2 {
+.signup .main_signup .form h2 {
   font-size: 40px;
   color: #0560fd;
+  height: 20%;
+  margin: 0px;
+  margin-top: 5px;
 }
-.form form {
+
+.signup .main_signup .form form {
+  /* border: 1px solid red; */
+  height: 80%;
+  width: 60%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  border: 1px solid red;
-  width: 80%;
 }
-.form form input {
-  border: none; 
-} */
+.signup .main_signup .form form label {
+  font-size: 15px;
+  margin-bottom: 5px;
+  color: #7c8290;
+  font-weight: 600;
+  /* display: none; */
+}
+.signup .main_signup .form form input {
+  height: 30px;
+  width: 100%;
+  margin-bottom: 6px;
+  /* border: none; */
+  border: 1px solid #dce0e7;
+  background-color: #f8f9fd;
+  border-radius: 8px;
+}
+.signup .main_signup .form form input:focus {
+  border: 1px solid #dce0e7 !important;
+  outline: none !important;
+  background-color: #f8f9fd;
+  color: #7c8290;
+}
