@@ -1,0 +1,52 @@
+.signup {
+  height: 97vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signup .main_signup {
+  /* border: 1px solid red; */
+  height: 60%;
+  width: 50%;
+  display: inline-flex;
+  overflow: hidden;
+}
+.signup .main_signup .left {
+  background-color: #0560fd;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signup .main_signup .left h1 {
+  font-size: 60px;
+  color: #f8f9fd;
+}
+.signup .main_signup .form {
+  /* border: 1px solid rgb(157, 0, 255); */
+  width: 60%;
+  background-color: #f8f9fd;
+}
+/* .form {
+  width: 25%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f9fd;
+  border-radius: 15px;
+}
+.form h2 {
+  font-size: 40px;
+  color: #0560fd;
+}
+.form form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid red;
+  width: 80%;
+}
+.form form input {
+  border: none; 
+} */
