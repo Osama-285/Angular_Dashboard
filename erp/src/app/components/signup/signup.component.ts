@@ -22,8 +22,14 @@ export class SignupComponent implements OnInit {
     if (this.signupForm.get('email')?.hasError('required')) {
       this.signupForm.get('email')?.setErrors({ emailRequired: true });
     }
+    if (this.signupForm.get('email')?.hasError('email')) {
+      this.signupForm.get('email')?.setErrors({ emailformat: true });
+    }
     if (this.signupForm.get('password')?.hasError('required')) {
       this.signupForm.get('password')?.setErrors({ passwordRequired: true });
+    }
+    if (this.signupForm.get('password')?.hasError('minlength')) {
+      this.signupForm.get('password')?.setErrors({ passwordminlength: true });
     }
     if (this.signupForm.valid) {
       console.log('SignUp Form', this.signupForm.value);

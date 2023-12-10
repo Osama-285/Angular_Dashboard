@@ -15,6 +15,7 @@
           formControlName="firstName"
         />
         <div
+          class="errors"
           *ngIf="validForm && signupForm.get('firstName')?.hasError('required')"
         >
           First Name is Required
@@ -28,6 +29,7 @@
           formControlName="lastName"
         />
         <div
+          class="errors"
           *ngIf="validForm && signupForm.get('lastName')?.hasError('required')"
         >
           Last Name is Required
@@ -41,13 +43,17 @@
           formControlName="email"
         />
         <div
+          class="errors"
           *ngIf="
             validForm && signupForm.get('email')?.hasError('emailRequired')
           "
         >
           Email is Required
         </div>
-        <div *ngIf="validForm && signupForm.get('email')!.hasError('email')">
+        <div
+          class="errors"
+          *ngIf="validForm && signupForm.get('email')!.hasError('emailformat')"
+        >
           Please enter a valid email address.
         </div>
 
@@ -59,6 +65,7 @@
           formControlName="password"
         />
         <div
+          class="errors"
           *ngIf="
             validForm &&
             signupForm.get('password')?.hasError('passwordRequired')
@@ -67,7 +74,11 @@
           Password is required.
         </div>
         <div
-          *ngIf="validForm && signupForm.get('password')?.hasError('minlength')"
+          class="errors"
+          *ngIf="
+            validForm &&
+            signupForm.get('password')?.hasError('passwordminlength')
+          "
         >
           Password must be at least 6 characters.
         </div>

@@ -40,24 +40,23 @@
 }
 
 .signup .main_signup .form form {
-  /* border: 1px solid red; */
   height: 80%;
   width: 60%;
   display: flex;
   flex-direction: column;
+  z-index: 1;
 }
 .signup .main_signup .form form label {
   font-size: 15px;
   margin-bottom: 5px;
   color: #7c8290;
   font-weight: 600;
-  /* display: none; */
 }
 .signup .main_signup .form form input {
   height: 30px;
   width: 100%;
   margin-bottom: 6px;
-  /* border: none; */
+
   color: #7c8290;
   font-size: 15px;
   border: 1px solid #dce0e7;
@@ -72,7 +71,6 @@
   font-size: 15px;
 }
 .signup .main_signup .form form .btn {
-  /* border: 1px solid red; */
   margin-top: 10px;
   height: 13%;
   display: inline-flex;
@@ -94,4 +92,13 @@
 .signup .main_signup .form form button:hover {
   background-color: #0560fd;
   color: #f8f9fd;
+}
+.signup .main_signup .form form .errors {
+  text-align: center;
+  z-index: 99;
+  margin-left: 40%;
+  font-size: 15px;
+  color: #ff0000;
+
+  border-radius: 5px;
 }
