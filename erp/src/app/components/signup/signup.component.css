@@ -83,15 +83,15 @@
   width: 35%;
   height: 40px;
   font-size: 18px;
-  border: none;
-  background-color: #0560fd;
-  color: #f8f9fd;
+  border: 1px solid #0560fd;
+
+  background-color: #f8f9fd;
+  color: #0560fd;
   border-radius: 8px;
   letter-spacing: 1px;
 }
 
 .signup .main_signup .form form button:hover {
-  background-color: #f8f9fd;
-  color: #0560fd;
-  border: 1px solid #0560fd;
+  background-color: #0560fd;
+  color: #f8f9fd;
 }
