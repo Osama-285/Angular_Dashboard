@@ -8,17 +8,29 @@
       <h2>Login Form</h2>
       <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
         <label for="email">Email: </label>
-        <input type="email" id="email" formControlName="email" />
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter email"
+          formControlName="email"
+        />
         <div
           *ngIf="submitted && loginForm.get('email')!.hasError('emailRequired')"
         >
           Email is required.
         </div>
-        <div *ngIf="submitted && loginForm.get('email')!.hasError('email')">
+        <div
+          *ngIf="submitted && loginForm.get('email')!.hasError('validEmail')"
+        >
           Please enter a valid email address.
         </div>
         <label for="password">Password: </label>
-        <input type="password" id="password" formControlName="password" />
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter password"
+          formControlName="password"
+        />
         <div
           *ngIf="
             submitted && loginForm.get('password')!.hasError('passwordRequired')
@@ -27,7 +39,7 @@
           Password is required.
         </div>
         <div
-          *ngIf="submitted && loginForm.get('password')!.hasError('minlength')"
+          *ngIf="submitted && loginForm.get('password')!.hasError('minLength')"
         >
           Password must be at least 6 characters.
         </div>

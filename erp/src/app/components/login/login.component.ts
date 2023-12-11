@@ -26,9 +26,16 @@ export class LoginComponent implements OnInit {
     if (this.loginForm.get('email')?.hasError('required')) {
       this.loginForm.get('email')?.setErrors({ emailRequired: true });
     }
+    if (this.loginForm.get('email')?.hasError('email')) {
+      this.loginForm.get('email')?.setErrors({ validEmail: true });
+    }
 
     if (this.loginForm.get('password')?.hasError('required')) {
       this.loginForm.get('password')?.setErrors({ passwordRequired: true });
+    }
+
+    if (this.loginForm.get('password')?.hasError('minlength')) {
+      this.loginForm.get('password')?.setErrors({ minLength: true });
     }
 
     if (this.loginForm.valid) {
