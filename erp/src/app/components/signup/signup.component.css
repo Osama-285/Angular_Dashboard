@@ -1,17 +1,17 @@
-.signup {
+/* .signup {
   height: 97vh;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.signup .main_signup {
-  /* border: 1px solid red; */
+} */
+/* .signup .main_signup {
+  
   height: 60%;
   width: 50%;
   display: inline-flex;
   overflow: hidden;
-}
-.signup .main_signup .left {
+} */
+/* .signup .main_signup .left {
   background-color: #0560fd;
   width: 40%;
   display: flex;
@@ -21,8 +21,8 @@
 .signup .main_signup .left h1 {
   font-size: 60px;
   color: #f8f9fd;
-}
-.signup .main_signup .form {
+} */
+/* .signup .main_signup .form {
   width: 60%;
   background-color: #f8f9fd;
   display: flex;
@@ -30,16 +30,16 @@
   align-items: center;
   padding: 20px 8px;
   justify-content: center;
-}
-.signup .main_signup .form h2 {
+} */
+/* .signup .main_signup .form h2 {
   font-size: 40px;
   color: #0560fd;
   height: 20%;
   margin: 0px;
   margin-top: 5px;
-}
+} */
 
-.signup .main_signup .form form {
+/* .signup .main_signup .form form {
   height: 80%;
   width: 60%;
   display: flex;
@@ -62,8 +62,8 @@
   border: 1px solid #dce0e7;
   background-color: #f8f9fd;
   border-radius: 8px;
-}
-.signup .main_signup .form form input:focus {
+} */
+/* .signup .main_signup .form form input:focus {
   border: 1px solid #dce0e7 !important;
   outline: none !important;
   background-color: #f8f9fd;
@@ -92,7 +92,7 @@
 .signup .main_signup .form form button:hover {
   background-color: #0560fd;
   color: #f8f9fd;
-}
+} */
 .signup .main_signup .form form .errors {
   text-align: center;
   z-index: 99;

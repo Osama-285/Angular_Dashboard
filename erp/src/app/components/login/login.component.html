@@ -1,22 +1,41 @@
-<h1>Login Form</h1>
-<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-  <label for="email">Email: </label>
-  <input type="email" id="email" formControlName="email" />
-  <div *ngIf="submitted && loginForm.get('email')!.hasError('emailRequired')">
-    Email is required.
+<div class="signup">
+  <div class="main_signup">
+    <div class="left">
+      <h1>Invo.</h1>
+    </div>
+
+    <div class="form">
+      <h2>Login Form</h2>
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <label for="email">Email: </label>
+        <input type="email" id="email" formControlName="email" />
+        <div
+          *ngIf="submitted && loginForm.get('email')!.hasError('emailRequired')"
+        >
+          Email is required.
+        </div>
+        <div *ngIf="submitted && loginForm.get('email')!.hasError('email')">
+          Please enter a valid email address.
+        </div>
+        <label for="password">Password: </label>
+        <input type="password" id="password" formControlName="password" />
+        <div
+          *ngIf="
+            submitted && loginForm.get('password')!.hasError('passwordRequired')
+          "
+        >
+          Password is required.
+        </div>
+        <div
+          *ngIf="submitted && loginForm.get('password')!.hasError('minlength')"
+        >
+          Password must be at least 6 characters.
+        </div>
+        <div class="btn">
+          <button type="button">Login</button>
+          <button type="submit">Signup</button>
+        </div>
+      </form>
+    </div>
   </div>
-  <div *ngIf="submitted && loginForm.get('email')!.hasError('email')">
-    Please enter a valid email address.
-  </div>
-  <label for="password">Password: </label>
-  <input type="password" id="password" formControlName="password" />
-  <div
-    *ngIf="submitted && loginForm.get('password')!.hasError('passwordRequired')"
-  >
-    Password is required.
-  </div>
-  <div *ngIf="submitted && loginForm.get('password')!.hasError('minlength')">
-    Password must be at least 6 characters.
-  </div>
-  <button type="submit">Login</button>
-</form>
+</div>
