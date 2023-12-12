@@ -100,3 +100,12 @@ body {
   background-color: #0560fd;
   color: #f8f9fd;
 }
+.signup .main_signup .form form .errors {
+  text-align: center;
+  z-index: 99;
+  margin-left: 40%;
+  font-size: 15px;
+  color: #ff0000;
+
+  border-radius: 5px;
+}
