@@ -15,11 +15,13 @@
           formControlName="email"
         />
         <div
+          class="errors"
           *ngIf="submitted && loginForm.get('email')!.hasError('emailRequired')"
         >
           Email is required.
         </div>
         <div
+          class="errors"
           *ngIf="submitted && loginForm.get('email')!.hasError('validEmail')"
         >
           Please enter a valid email address.
@@ -32,6 +34,7 @@
           formControlName="password"
         />
         <div
+          class="errors"
           *ngIf="
             submitted && loginForm.get('password')!.hasError('passwordRequired')
           "
@@ -39,13 +42,14 @@
           Password is required.
         </div>
         <div
+          class="errors"
           *ngIf="submitted && loginForm.get('password')!.hasError('minLength')"
         >
           Password must be at least 6 characters.
         </div>
         <div class="btn">
-          <button type="button">Login</button>
-          <button type="submit">Signup</button>
+          <button type="submit">Login</button>
+          <button type="button">Signup</button>
         </div>
       </form>
     </div>
