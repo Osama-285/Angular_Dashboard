@@ -7,4 +7,6 @@ import { admin } from 'src/app/constants/nav.constant';
 })
 export class MainComponent {
   adminNavBar = admin;
+  name = 'Chris Hutto';
+  email = 'chris@ws.com';
 }
