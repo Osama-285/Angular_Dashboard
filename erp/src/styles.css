@@ -2,6 +2,11 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Asap:wght@100;200;300;400;500;600;800&family=Manrope&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
 body {
   margin: 0px;
   background-color: #edf6fc;

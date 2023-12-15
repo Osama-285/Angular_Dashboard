@@ -169,11 +169,14 @@
   border-radius: 50%;
   margin: 0px;
   color: #ffffff;
-  margin-right: 14px;
+  margin-right: 8px;
 }
-.main .main_components .searchBar .profileDate {
-  border: 1px solid green;
-  height: 80%;
-  padding: 0px;
-  margin: 0px;
+.main .main_components .searchBar .profileDate .name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #7c8290;
+}
+.main .main_components .searchBar .profileDate .email {
+  font-weight: 600;
+  color: #7c8290;
 }
