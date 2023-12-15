@@ -151,9 +151,28 @@
 .main .main_components .searchBar .profileInfo {
   width: 60%;
   height: 100%;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: end;
+}
+.main .main_components .searchBar .profileInfo h3 {
+  background-color: #0560fd;
+  font-size: 40px;
+  font-weight: 600;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0px;
+  color: #ffffff;
+}
+.main .main_components .searchBar .profileDate {
+  border: 1px solid green;
+  height: 80%;
+  padding: 0px;
+  margin: 0px;
 }
