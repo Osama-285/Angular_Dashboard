@@ -159,16 +159,17 @@
 }
 .main .main_components .searchBar .profileInfo h3 {
   background-color: #0560fd;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 600;
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   margin: 0px;
   color: #ffffff;
+  margin-right: 14px;
 }
 .main .main_components .searchBar .profileDate {
   border: 1px solid green;
