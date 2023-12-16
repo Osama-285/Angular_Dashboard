@@ -52,9 +52,28 @@
 
 <div class="modal" [ngClass]="{ open: isModalOpen }">
   <div class="modal-content">
-    <span class="close" (click)="closeModal()">&times;</span>
-    <h2>Profile Info</h2>
-
+    <div class="modal-top">
+      <span class="close" (click)="closeModal()">&times;</span>
+      <h2>Profile Info</h2>
+    </div>
+    <form>
+      <div class="first-name">
+        <label for="fname">First Name</label>
+        <input type="text" name="fname" id="fname" />
+      </div>
+      <div class="last-name">
+        <label for="lname">Last Name</label>
+        <input type="text" name="lname" id="lname" />
+      </div>
+      <div class="email">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div class="contact">
+        <label for="contact">Phone No.</label>
+        <input type="text" name="contact" id="contact" />
+      </div>
+    </form>
     <p>This is a modal content.</p>
     <button (click)="closeModal()">Close</button>
   </div>
