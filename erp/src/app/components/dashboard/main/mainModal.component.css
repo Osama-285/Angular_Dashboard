@@ -34,7 +34,7 @@
   align-items: center;
   color: red;
   justify-content: center;
-  border-radius: 5px;
+  border-radius: 7px;
 }
 
 .close:hover,
@@ -43,6 +43,7 @@
   color: rgb(255, 255, 255);
   text-decoration: none;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .open {
@@ -57,8 +58,75 @@
 }
 .modal .modal-content .modal-top h2 {
   font-size: 40px;
-  /* border: 1px solid red; */
+  color: #7c8290;
 }
 .modal .modal-content .modal-top span {
   font-size: 20px;
+}
+.modal .modal-content form {
+  /* border: 1px solid red; */
+  height: 80%;
+}
+.modal .modal-content form .inputField {
+  margin: 10px 0px;
+  height: 32px;
+  font-size: 15px;
+  color: #7c8290;
+  font-weight: 400;
+}
+.modal .modal-content form .inputField input {
+  height: 30px;
+  width: 60%;
+
+  color: #7c8290;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  background-color: transparent;
+  border-radius: 8px;
+}
+.modal .modal-content form .inputField input:focus {
+  outline: none !important;
+  background-color: transparent;
+  color: #7c8290;
+  font-size: 16px;
+}
+.modal .modal-content form .formBtns {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.modal .modal-content form .formBtns button {
+  width: 88px;
+  height: 83%;
+  margin: 0px 8px;
+  border-radius: 8px;
+}
+.modal .modal-content form .formBtns .savebtn {
+  background-color: rgb(223, 246, 223);
+  color: rgb(3, 172, 3);
+  border: none;
+  font-size: 15px;
+}
+.modal
+  .modal-content
+  form
+  .formBtns
+  .savebtn:hover.savebtn:hover:not([disabled]) {
+  background-color: rgb(3, 176, 3);
+  color: white;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+.modal .modal-content form .formBtns .closeBtn {
+  background-color: rgb(249, 217, 217);
+  color: red;
+  font-size: 15px;
+  border: none;
+}
+.modal .modal-content form .formBtns .closeBtn:hover {
+  color: white;
+  background-color: red;
+  transition: background-color 0.3s ease;
 }
