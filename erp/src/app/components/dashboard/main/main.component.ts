@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { admin } from 'src/app/constants/nav.constant';
+import { FormBuilder, FormGroup } from '@angular/forms';
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
