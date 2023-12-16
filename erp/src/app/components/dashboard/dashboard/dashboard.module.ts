@@ -9,6 +9,7 @@ import { HomeComponent } from '../home/home.component';
 import { ProductComponent } from '../product/product.component';
 import { ChatComponent } from '../chat/chat.component';
 import { SettingsComponent } from '../settings/settings.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     InvoicesComponent,
@@ -20,6 +21,11 @@ import { SettingsComponent } from '../settings/settings.component';
     ChatComponent,
     SettingsComponent,
   ],
-  imports: [CommonModule, DashboardRoutingModule],
+  imports: [
+    CommonModule,
+    DashboardRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+  ],
 })
 export class DashboardModule {}

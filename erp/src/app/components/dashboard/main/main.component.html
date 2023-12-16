@@ -53,28 +53,40 @@
 <div class="modal" [ngClass]="{ open: isModalOpen }">
   <div class="modal-content">
     <div class="modal-top">
-      <span class="close" (click)="closeModal()">&times;</span>
+      <span class="material-symbols-outlined close" (click)="closeModal()"
+        >close</span
+      >
       <h2>Profile Info</h2>
     </div>
-    <form>
+    <form [formGroup]="infoForm" (ngSubmit)="onSubmit()">
       <div class="first-name">
-        <label for="fname">First Name</label>
-        <input type="text" name="fname" id="fname" />
+        <label for="fname">First Name: </label>
+        <input
+          type="text"
+          name="fname"
+          id="fname"
+          formControlName="firstName"
+        />
       </div>
       <div class="last-name">
-        <label for="lname">Last Name</label>
-        <input type="text" name="lname" id="lname" />
+        <label for="lname">Last Name: </label>
+        <input type="text" name="lname" id="lname" formControlName="lastName" />
       </div>
       <div class="email">
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" />
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" formControlName="email" />
       </div>
       <div class="contact">
-        <label for="contact">Phone No.</label>
-        <input type="text" name="contact" id="contact" />
+        <label for="contact">Phone No: </label>
+        <input
+          type="text"
+          name="contact"
+          id="contact"
+          formControlName="phone"
+        />
       </div>
+      <button type="submit" [disabled]="!infoForm.dirty">Save</button>
+      <button (click)="closeModal()">Close</button>
     </form>
-    <p>This is a modal content.</p>
-    <button (click)="closeModal()">Close</button>
   </div>
 </div>
