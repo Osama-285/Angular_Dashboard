@@ -35,15 +35,26 @@
         <input type="text" placeholder="Search" />
       </div>
       <div class="profileInfo">
-        <h3>CH</h3>
-        <div class="profileDate">
-          <p class="name">Chris Hutt</p>
-          <p class="email">cHutt@acuma.us</p>
-        </div>
+        <button type="submit" class="profileBtn" (click)="openModal()">
+          <h3>CH</h3>
+          <div class="profileDate">
+            <p class="name">Chris Hutt</p>
+            <p class="email">cHutt@acuma.us</p>
+          </div>
+        </button>
       </div>
     </div>
     <div class="component_display">
       <router-outlet></router-outlet>
     </div>
+  </div>
+</div>
+
+<div class="modal" [ngClass]="{ open: isModalOpen }">
+  <div class="modal-content">
+    <span class="close" (click)="closeModal()">&times;</span>
+    <h2>Modal Title</h2>
+    <p>This is a modal content.</p>
+    <button (click)="closeModal()">Close</button>
   </div>
 </div>
