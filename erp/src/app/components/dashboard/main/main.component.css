@@ -168,9 +168,9 @@
   background-color: transparent;
   border: none;
 }
-.main .main_components .searchBar .profileInfo .profileBtn:hover {
+/* .main .main_components .searchBar .profileInfo .profileBtn:hover {
   border: 1px solid #0560fd;
-}
+} */
 .main .main_components .searchBar .profileInfo .profileBtn h3 {
   background-color: #0560fd;
   font-size: 35px;

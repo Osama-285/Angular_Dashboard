@@ -114,3 +114,9 @@ body {
 
   border-radius: 5px;
 }
+
+/* Component common styling*/
+.mainComponentHeading {
+  color: #7c8290;
+  font-size: 35px;
+}
