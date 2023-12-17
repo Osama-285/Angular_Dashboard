@@ -1,6 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { admin } from 'src/app/constants/nav.constant';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import {
+  FormBuilder,
+  FormGroup,
+  Validators,
+  FormControl,
+} from '@angular/forms';
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
@@ -9,6 +14,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class MainComponent implements OnInit {
   infoForm!: FormGroup;
   protected isModalOpen = false;
+  searchText: FormControl<string | null> = new FormControl<string | null>('');
+
   adminNavBar = admin;
   name = 'Chris Hutto';
   fName = 'Chris';
@@ -33,6 +40,10 @@ export class MainComponent implements OnInit {
   onSubmit() {
     console.log('Profile tab', this.infoForm.value);
     this.isModalOpen = false;
+  }
+
+  getValue(): string {
+    return this.searchText.value !== null ? this.searchText.value : '';
   }
 
   openModal() {

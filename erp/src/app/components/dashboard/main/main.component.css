@@ -142,6 +142,8 @@
 }
 .main .main_components .searchBar .searchInput input:focus {
   outline: none !important;
+  font-size: 16px;
+  color: #7c8290;
 }
 .main .main_components .component_display {
   width: 100%;
