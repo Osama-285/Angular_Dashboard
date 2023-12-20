@@ -1,0 +1,11 @@
+.main {
+  width: 100%;
+  /* border: 1px solid red; */
+  height: 95%;
+  padding: 10px;
+}
+.main .homeTop {
+  width: 100%;
+  border: 1px solid green;
+  height: 20%;
+}
