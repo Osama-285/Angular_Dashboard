@@ -39,10 +39,19 @@
   align-items: center;
   justify-content: center;
   margin-right: 6px;
-  background-color: #3efa3e2e;
-  color: #49d849;
+
   border-radius: 50%;
 }
+.main .homeTop .common .content .amount {
+  background-color: #3efa3e2e;
+  color: #49d849;
+}
+.main .homeTop .common .content .invoice {
+  background-color: #a4d8ed70;
+  color: #00a1fb;
+  font-size: 24px;
+}
+
 .main .homeTop .common h2 {
   margin-bottom: 8px;
   color: #7c8290;
