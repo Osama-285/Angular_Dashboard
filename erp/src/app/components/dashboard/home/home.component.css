@@ -51,6 +51,11 @@
   color: #00a1fb;
   font-size: 24px;
 }
+.main .homeTop .common .content .groups {
+  background-color: #edd8a470;
+  color: #fbb400;
+  font-size: 26px;
+}
 
 .main .homeTop .common h2 {
   margin-bottom: 8px;
