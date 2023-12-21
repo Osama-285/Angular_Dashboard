@@ -31,7 +31,7 @@
     <div class="graph">
       <div class="main_Graph">
         <div
-          *ngFor="let height of heights"
+          *ngFor="let height of heights; let i = index"
           class="bar"
           [style.height]="height"
         ></div>

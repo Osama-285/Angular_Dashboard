@@ -23,8 +23,8 @@
 }
 
 .bar {
-  width: 40px;
-  background-color: #3498db;
+  width: 45px;
+  background-color: #3baaf5;
   transition: height 0.5s;
   border-radius: 6px;
 }
