@@ -13,6 +13,20 @@ export const axis = [
   'Dec',
 ];
 
+export const barHeights = [
+  '30%',
+  '50%',
+  '70%',
+  '20%',
+  '80%',
+  '40%',
+  '60%',
+  '90%',
+  '10%',
+  '45%',
+  '75%',
+  '35%',
+];
 //  'January',
 //   'February',
 //   'March',

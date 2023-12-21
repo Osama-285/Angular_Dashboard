@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { axis } from 'src/app/constants/graph.constants';
+import { axis, barHeights } from 'src/app/constants/graph.constants';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -7,4 +7,5 @@ import { axis } from 'src/app/constants/graph.constants';
 })
 export class HomeComponent {
   graphAxis = axis;
+  heights = barHeights;
 }
