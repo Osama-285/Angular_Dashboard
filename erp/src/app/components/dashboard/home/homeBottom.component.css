@@ -1,0 +1,17 @@
+.main .homeBottom {
+  width: 100%;
+  /* border: 1px solid red; */
+  height: 75%;
+  padding: 20px 10px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.main .homeBottom .graph {
+  width: 60%;
+  /* border: 1px solid red; */
+  height: 90%;
+  background-color: white;
+  border-radius: 10px;
+}
