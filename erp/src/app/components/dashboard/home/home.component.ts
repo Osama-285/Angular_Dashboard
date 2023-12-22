@@ -8,4 +8,9 @@ import { axis, barHeights } from 'src/app/constants/graph.constants';
 export class HomeComponent {
   graphAxis = axis;
   heights = barHeights;
+  totalRevenue = '150k';
+
+  barClick(i: number, content: string) {
+    console.log(content, i);
+  }
 }

@@ -29,12 +29,19 @@
   </div>
   <div class="homeBottom">
     <div class="graph">
+      <div class="graphTop">
+        <h2>
+          Total Revenue: <span>{{ totalRevenue }}</span>
+        </h2>
+      </div>
       <div class="main_Graph">
-        <div
+        <button
+          type="button"
           *ngFor="let height of heights; let i = index"
           class="bar"
           [style.height]="height"
-        ></div>
+          (click)="barClick(i + 1, height)"
+        ></button>
       </div>
       <div class="x_axis">
         <div class="axis" *ngFor="let item of graphAxis">
