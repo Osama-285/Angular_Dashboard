@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
 
 .main .homeBottom .graph {
@@ -59,4 +60,47 @@
 }
 .main .homeBottom .graph .x_axis .axis {
   font-size: 18px;
+}
+
+.main .homeBottom .ActivityTable {
+  width: 34%;
+  height: 90%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.main .homeBottom .ActivityTable h2 {
+  color: #7c8290;
+}
+.main .homeBottom .ActivityTable .notifications {
+  width: 100%;
+  height: 95%;
+  padding-top: 10px;
+}
+.main .homeBottom .ActivityTable .notifications .notify {
+  width: 100%;
+  height: 30%;
+  background-color: #edf6fc;
+  padding: 0px 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 8px;
+}
+.main .homeBottom .ActivityTable .notifications .notify .notifyHeading {
+  width: 100%;
+  height: 35px;
+
+  display: inline-flex;
+  align-items: center;
+}
+.main .homeBottom .ActivityTable .notifications .notify .notifyHeading img {
+  width: 30px;
+  height: 30px;
+}
+.main .homeBottom .ActivityTable .notifications .notify .notifyHeading h4 {
+  color: rgb(77, 77, 77);
+  font-size: 18px;
+  margin-left: 4px;
 }
