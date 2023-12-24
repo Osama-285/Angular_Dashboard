@@ -52,13 +52,10 @@
     <div class="ActivityTable">
       <h2>Notifications</h2>
       <div class="notifications">
-        <div class="notify">
+        <div class="notify" *ngFor="let notify of notifications">
           <div class="notifyHeading">
-            <img
-              src="https://cdn.jim-nielsen.com/macos/1024/microsoft-outlook-2019-04-22.png"
-              alt=""
-            />
-            <h4>Outlook</h4>
+            <img src="/assets/outlook1.png" alt="" />
+            <h4>Jim Kennedy</h4>
           </div>
           <div class="notifyBody">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
