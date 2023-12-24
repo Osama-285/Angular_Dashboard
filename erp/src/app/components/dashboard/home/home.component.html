@@ -54,13 +54,11 @@
       <div class="notifications">
         <div class="notify" *ngFor="let notify of notifications">
           <div class="notifyHeading">
-            <img src="/assets/outlook1.png" alt="" />
-            <h4>Jim Kennedy</h4>
+            <img src="/assets/{{ notify.platform }}.png" alt="" />
+            <h4>{{ notify.sender }}</h4>
           </div>
           <div class="notifyBody">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
-            maiores iusto animi totam debitis impedit error hic reprehenderit,
-            velit ipsa voluptatem minus ipsam?
+            {{ notify.message }}
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 .main .homeBottom {
   width: 100%;
   height: 75%;
-  padding: 20px 10px 0px 10px;
+  padding: 0px 10px 0px 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -88,15 +88,35 @@
 .main .homeBottom .ActivityTable .notifications .notify {
   width: 100%;
   height: 35%;
-  background-color: #edf6fc;
+  background-color: #e1eef7;
   padding: 0px 10px;
   overflow: hidden;
   text-overflow: ellipsis;
   border-radius: 8px;
   color: rgb(77, 77, 77);
-  margin-bottom: 8px;
-  border: 1px solid red;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+  /* margin: 10px auto; */
 }
+
+.main .homeBottom .ActivityTable .notifications .notify:hover {
+  transform: translateY(5px);
+  backdrop-filter: blur(3px);
+  animation: buttonAnimation 1s infinite;
+}
+
+@keyframes buttonAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .main .homeBottom .ActivityTable .notifications .notify .notifyHeading {
   width: 100%;
   height: 45px;
