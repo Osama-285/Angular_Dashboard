@@ -3,7 +3,15 @@
 </div>
 <div class="invoice">
   <div class="invoiceTop">
-    <div class="revenue"></div>
+    <div *ngFor="let items of invoices; let i = index" class="invoices cards">
+      <h1>{{ items.heading }}</h1>
+      <div class="cardBody">
+        <span class="material-symbols-outlined icon" [ngClass]="items.color">
+          {{ items.icon }}
+        </span>
+        <h2>{{ items.value }}</h2>
+      </div>
+    </div>
   </div>
   <div class="invoiceBottom"></div>
 </div>

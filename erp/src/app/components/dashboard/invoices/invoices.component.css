@@ -3,13 +3,58 @@
   height: 95%;
 }
 .invoice .invoiceTop {
-  border: 1px solid rgb(145, 255, 2);
   height: 23%;
   padding: 12px;
   display: flex;
-  flex-direction: row;
+  /* flex-direction: column; */
   align-items: center;
+  justify-content: space-between;
 }
+
+.invoice .invoiceTop .cards {
+  width: 24%;
+  height: 100%;
+  border-radius: 15px;
+  background-color: white;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #7c8290;
+}
+.invoice .invoiceTop .cards .cardBody {
+  /* border: 1px solid red; */
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  margin: 4px 0px;
+  color: black;
+}
+.invoice .invoiceTop .cards .cardBody .icon {
+  font-size: 40px;
+  margin-right: 8px;
+}
+
 .invoice .invoiceBottom {
   height: 77%;
+}
+
+/* Colors */
+.color1 {
+  color: #cfbfad;
+}
+
+.color2 {
+  color: #91aec4;
+}
+
+.color3 {
+  color: #a3c585;
+}
+
+.color4 {
+  color: #cb4c46;
 }
