@@ -1,0 +1,15 @@
+.invoice {
+  /* border: 1px solid red; */
+  height: 95%;
+}
+.invoice .invoiceTop {
+  border: 1px solid rgb(145, 255, 2);
+  height: 23%;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.invoice .invoiceBottom {
+  height: 77%;
+}
