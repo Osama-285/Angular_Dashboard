@@ -1,0 +1,14 @@
+.invoice .invoiceBottom {
+  border: 1px solid red;
+  height: 77%;
+  padding: 12px;
+}
+.invoice .invoiceBottom .invoiceBtns {
+  border: 1px solid red;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.invoice .invoiceBottom .invoiceBtns {
+}
