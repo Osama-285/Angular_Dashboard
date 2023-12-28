@@ -24,3 +24,16 @@ export const invoiceInfo = [
     color: 'color4',
   },
 ];
+
+export const tableInfor = [
+  {
+    client: 'Archtop',
+    invoiceNo: 'AC-02234',
+    description:
+      'Lorem ipscing elit. Eaque, nisi, itaque hic, dolor laudantium? Placeempore voluptate?',
+    createdAt: '21 Jan, 2023',
+    dueDate: '22 Mar, 2023',
+    paid: true,
+    due: false,
+  },
+];

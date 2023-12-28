@@ -32,17 +32,18 @@
       </div>
       <div class="tableContent">
         <ul>
-          <li>
-            <div class="cell1">1.</div>
-            <div class="cell2">Archtop</div>
-            <div class="cell2">AC-02234</div>
-            <div class="cell4">
-              Lorem ipscing elit. Eaque, nisi, itaque hic, dolor laudantium?
-              Placeempore voluptate?
+          <li *ngFor="let item of invoiceInformation; let i = index">
+            <div class="cell1">{{ i + 1 }}.</div>
+            <div class="cell2">{{ item.client }}</div>
+            <div class="cell2">{{ item.invoiceNo }}</div>
+            <div class="cell4">{{ item.description }}</div>
+            <div class="cell2">{{ item.createdAt }}</div>
+            <div class="cell2">{{ item.dueDate }}</div>
+            <div class="cell2 status">
+              <p [ngClass]="{ paid: item.paid, class2: item.due }">
+                {{ item.paid ? "Paid" : "Due" }}
+              </p>
             </div>
-            <div class="cell2">21 Jan, 2023</div>
-            <div class="cell2">22 Mar, 2023</div>
-            <div class="cell2 paid"><p>Paid</p></div>
           </li>
         </ul>
       </div>
