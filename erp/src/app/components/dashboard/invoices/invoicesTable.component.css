@@ -45,20 +45,24 @@
 }
 .invoice .invoiceBottom .invoiceTable {
   display: flex;
-  /* align-items: center; */
+  border: 1px solid rgb(205, 204, 204);
+  flex-direction: column;
   justify-content: center;
   height: 90%;
   padding: 10px 10px 0px 10px;
+  background-color: white;
+  border-radius: 8px;
 }
 .invoice .invoiceBottom .invoiceTable .tableHeading {
   width: 100%;
   height: 10%;
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 600;
   display: inline-flex;
+  color: #7c8290;
 }
 .invoice .invoiceBottom .invoiceTable .tableHeading .column1 {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 100%;
   width: 6%;
   display: flex;
@@ -66,42 +70,64 @@
   align-items: center;
 }
 .invoice .invoiceBottom .invoiceTable .tableHeading .column2 {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 100%;
   width: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.invoice .invoiceBottom .invoiceTable .tableHeading .column3 {
-  border: 1px solid red;
-  height: 100%;
-  width: 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .invoice .invoiceBottom .invoiceTable .tableHeading .column4 {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 100%;
   width: 44%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.invoice .invoiceBottom .invoiceTable .tableHeading .column5 {
-  border: 1px solid red;
+.invoice .invoiceBottom .invoiceTable .tableContent {
+  height: 90%;
+}
+.invoice .invoiceBottom .invoiceTable .tableContent ul {
+  height: 100%;
+}
+.invoice .invoiceBottom .invoiceTable .tableContent ul li {
+  border-bottom: 1px solid rgb(218, 218, 221);
+  border-top: 1px solid rgb(218, 218, 221);
+  /* background-color: rgb(231, 241, 250); */
+  display: inline-flex;
+  list-style: none;
+  height: 10%;
+  width: 100%;
+  border-radius: 2px;
+}
+.invoice .invoiceBottom .invoiceTable .tableContent ul li .cell1 {
+  height: 100%;
+  width: 6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.invoice .invoiceBottom .invoiceTable .tableContent ul li .cell1 {
+  height: 100%;
+  width: 6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.invoice .invoiceBottom .invoiceTable .tableContent ul li .cell2 {
   height: 100%;
   width: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.invoice .invoiceBottom .invoiceTable .tableHeading .column6 {
-  border: 1px solid red;
+.invoice .invoiceBottom .invoiceTable .tableContent ul li .cell4 {
   height: 100%;
-  width: 10%;
+  width: 44%;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
