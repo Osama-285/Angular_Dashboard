@@ -30,10 +30,30 @@ export const tableInfor = [
     client: 'Archtop',
     invoiceNo: 'AC-02234',
     description:
-      'Lorem ipscing elit. Eaque, nisi, itaque hic, dolor laudantium? Placeempore voluptate?',
+      'Lorem ipscing elit. Eaque, nisi, itaque hic, dolor laudantium? Placeempore volu?',
     createdAt: '21 Jan, 2023',
     dueDate: '22 Mar, 2023',
     paid: true,
     due: false,
+  },
+  {
+    client: 'PRTO',
+    invoiceNo: 'AC-02235',
+    description:
+      'Lorem ipscing elit. Eaque, nisi, itaque hic, dolor laudantium? Placeempore volu?',
+    createdAt: '21 Jan, 2023',
+    dueDate: '22 Mar, 2023',
+    paid: true,
+    due: false,
+  },
+  {
+    client: 'ABC',
+    invoiceNo: 'AC-02236',
+    description:
+      'Lorem ipscing elit. Eaque, nisi, itaque hic, dolor laudantium? Placeempore volu?',
+    createdAt: '01 May, 2023',
+    dueDate: '12 July, 2023',
+    paid: false,
+    due: true,
   },
 ];

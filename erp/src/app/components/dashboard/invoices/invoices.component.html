@@ -40,7 +40,7 @@
             <div class="cell2">{{ item.createdAt }}</div>
             <div class="cell2">{{ item.dueDate }}</div>
             <div class="cell2 status">
-              <p [ngClass]="{ paid: item.paid, class2: item.due }">
+              <p [ngClass]="{ paid: item.paid, due: item.due }">
                 {{ item.paid ? "Paid" : "Due" }}
               </p>
             </div>
