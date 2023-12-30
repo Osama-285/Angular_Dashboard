@@ -1,0 +1,30 @@
+.inventoryMain {
+  /* border: 1px solid red; */
+  margin-top: 12px;
+  height: 150%;
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+}
+.inventoryMain .inventoryBody {
+  width: 75%;
+  height: 100%;
+  /* border: 1px solid red; */
+}
+.inventoryMain .overview {
+  width: 25%;
+  height: 100%;
+  border: 1px solid blue;
+  padding: 10px 20px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+.inventoryMain .overview::-webkit-scrollbar {
+  width: 0px;
+}
+.inventoryMain .overview .overviewBody {
+  /* border: 1px solid red; */
+  height: 500px;
+  border-radius: 16px;
+  background-color: white;
+}

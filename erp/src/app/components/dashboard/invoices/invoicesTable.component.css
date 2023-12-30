@@ -47,10 +47,10 @@
 }
 .invoice .invoiceBottom .invoiceTable {
   display: flex;
-  border: 1px solid rgb(205, 204, 204);
+  /* border: 1px solid rgb(205, 204, 204); */
   flex-direction: column;
   justify-content: center;
-  height: 90%;
+  height: 88%;
   overflow: hidden;
   background-color: white;
   border-radius: 8px;
@@ -65,7 +65,7 @@
   font-family: "Inter", sans-serif;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-family: "Poppins", sans-serif;
-  background-color: #d7d6d6;
+  background-color: #ebebeb;
   color: black;
 }
 .invoice .invoiceBottom .invoiceTable .tableHeading .column1 {
