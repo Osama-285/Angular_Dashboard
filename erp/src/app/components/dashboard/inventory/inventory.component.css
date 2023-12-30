@@ -12,19 +12,54 @@
   /* border: 1px solid red; */
 }
 .inventoryMain .overview {
-  width: 25%;
+  width: 22%;
   height: 100%;
-  border: 1px solid blue;
-  padding: 10px 20px;
+  /* border: 1px solid blue; */
+  padding: 10px;
   overflow-y: scroll;
   scroll-behavior: smooth;
 }
 .inventoryMain .overview::-webkit-scrollbar {
-  width: 0px;
+  width: 10px;
 }
 .inventoryMain .overview .overviewBody {
   /* border: 1px solid red; */
   height: 500px;
   border-radius: 16px;
   background-color: white;
+  padding: 12px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.inventoryMain .overview .overviewBody h3 {
+  height: 30px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #1ca6f7;
+  margin-bottom: 8px;
+}
+.inventoryMain .overview .overviewBody .overviewTop {
+  /* border: 1px solid red; */
+  display: inline-flex;
+  height: 150px;
+  justify-content: space-around;
+}
+.inventoryMain .overview .overviewBody .overviewTop .totalSKU {
+  border: 2px solid rgb(209, 209, 209);
+  width: 45%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.inventoryMain .overview .overviewBody .overviewTop .totalSKU p {
+  margin-bottom: 8px;
+  font-size: 18px;
+  color: #7c8290;
+  font-weight: 400;
+}
+.inventoryMain .overview .overviewBody .overviewTop .totalSKU h1 {
+  color: #1ca6f7;
 }
