@@ -20,7 +20,7 @@
   scroll-behavior: smooth;
 }
 .inventoryMain .overview::-webkit-scrollbar {
-  width: 10px;
+  width: 0px;
 }
 .inventoryMain .overview .overviewBody {
   /* border: 1px solid red; */
@@ -40,14 +40,15 @@
 }
 .inventoryMain .overview .overviewBody .overviewTop {
   /* border: 1px solid red; */
-  display: inline-flex;
-  height: 150px;
-  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  height: 300px;
+  justify-content: space-between;
 }
 .inventoryMain .overview .overviewBody .overviewTop .totalSKU {
   border: 2px solid rgb(209, 209, 209);
-  width: 45%;
-  height: 90%;
+  width: 48%;
+  height: 45%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,4 +63,9 @@
 }
 .inventoryMain .overview .overviewBody .overviewTop .totalSKU h1 {
   color: #1ca6f7;
+}
+
+.inventoryMain .overview .overviewBody .overviewMid {
+  border: 1px solid red;
+  height: 150px;
 }
