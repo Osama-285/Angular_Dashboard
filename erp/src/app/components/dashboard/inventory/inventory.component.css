@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&display=swap");
+
 .inventoryMain {
   /* border: 1px solid red; */
   margin-top: 12px;
@@ -5,6 +7,9 @@
   width: 100%;
   display: inline-flex;
   flex-direction: row;
+  font-family: "Inter", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .inventoryMain .inventoryBody {
   width: 75%;
@@ -54,6 +59,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 10px;
+  background-color: transparent;
 }
 .inventoryMain .overview .overviewBody .overviewTop .totalSKU p {
   margin-bottom: 8px;
@@ -63,6 +69,8 @@
 }
 .inventoryMain .overview .overviewBody .overviewTop .totalSKU h1 {
   color: #1ca6f7;
+  font-size: 32px;
+  font-weight: 800;
 }
 .inventoryMain .overview .overviewBody .overviewBottom {
   border: 2px solid rgb(224, 224, 224);
@@ -72,13 +80,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: transparent;
 }
 .inventoryMain .overview .overviewBody .overviewBottom p {
   color: #7c8290;
   margin-bottom: 10px;
   font-size: 28px;
-  font-weight: 200;
+  font-weight: 100;
 }
 .inventoryMain .overview .overviewBody .overviewBottom h1 {
   color: rgb(90, 252, 130);
+  font-size: 32px;
+  font-weight: 800;
 }

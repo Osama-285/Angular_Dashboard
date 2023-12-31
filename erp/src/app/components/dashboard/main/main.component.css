@@ -6,6 +6,7 @@
 .navbar {
   width: 230px;
   height: 97vh;
+  position: sticky;
 }
 .logo {
   width: 100%;
