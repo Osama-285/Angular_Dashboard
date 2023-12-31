@@ -1,0 +1,8 @@
+.inventoryMain .inventoryBody .inventorybtns {
+  border: 1px solid red;
+  height: 10%;
+}
+.inventoryMain .inventoryBody .inventory {
+  border: 1px solid red;
+  height: 90%;
+}
