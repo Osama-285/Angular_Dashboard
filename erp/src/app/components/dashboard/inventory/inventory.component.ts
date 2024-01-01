@@ -5,4 +5,10 @@ import { Component } from '@angular/core';
   templateUrl: './inventory.component.html',
   styleUrls: ['./inventory.component.css', './inventoryItem.component.css'],
 })
-export class InventoryComponent {}
+export class InventoryComponent {
+  selectedOption: string = 'option1';
+
+  onOptionSelected(): void {
+    console.log('Selected Option:', this.selectedOption);
+  }
+}

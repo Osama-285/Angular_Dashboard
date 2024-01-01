@@ -1,7 +1,56 @@
 .inventoryMain .inventoryBody .inventorybtns {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 10%;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
+
+.inventoryMain .inventoryBody .inventorybtns .dropDowns {
+  /* border: 1px solid red; */
+  width: 75%;
+  height: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.inventoryMain .inventoryBody .inventorybtns .dropDowns .categories {
+  border: 1px solid rgb(133, 133, 133);
+  width: 230px;
+  height: 50px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  font-size: 20px;
+  overflow: hidden;
+}
+.inventoryMain .inventoryBody .inventorybtns .dropDowns .categories select {
+  border: none;
+  /* border: 1px solid red; */
+  width: 110px;
+  height: 100%;
+  font-size: 18px;
+  background-color: transparent;
+}
+.inventoryMain
+  .inventoryBody
+  .inventorybtns
+  .dropDowns
+  .categories
+  select:focus {
+  border: none;
+  outline: none;
+}
+.categories select option {
+  border: 1px solid red;
+  width: 30px;
+  border-radius: 0px;
+}
+
 .inventoryMain .inventoryBody .inventory {
   border: 1px solid red;
   height: 90%;

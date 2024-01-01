@@ -4,6 +4,20 @@
 <div class="inventoryMain">
   <div class="inventoryBody">
     <div class="inventorybtns">
+      <div class="dropDowns">
+        <div class="categories">
+          <label for="options">Categories:</label>
+          <select
+            id="options"
+            [(ngModel)]="selectedOption"
+            (change)="onOptionSelected()"
+          >
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+          </select>
+        </div>
+      </div>
       <button type="submit">
         <span class="material-symbols-outlined"> add </span> Add Product
       </button>
