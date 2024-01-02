@@ -47,8 +47,9 @@
 }
 .categories select option {
   border: 1px solid red;
-  width: 30px;
+  min-width: 30px;
   border-radius: 0px;
+  color: blue;
 }
 
 .inventoryMain .inventoryBody .inventory {
