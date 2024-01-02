@@ -27,6 +27,7 @@
   border-radius: 14px;
   font-size: 20px;
   overflow: hidden;
+  margin-right: 16px;
 }
 .inventoryMain .inventoryBody .inventorybtns .dropDowns .categories select {
   border: none;
