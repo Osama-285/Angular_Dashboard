@@ -53,11 +53,6 @@
   color: blue;
 }
 
-.inventoryMain .inventoryBody .inventory {
-  border: 1px solid red;
-  height: 90%;
-}
-
 .inventoryMain .inventoryBody .inventorybtns button {
   /* border: 1px solid red; */
   background-color: transparent;
@@ -76,4 +71,18 @@
   margin: 0px 4px;
   color: rgb(52, 162, 252);
   font-weight: 400;
+}
+
+.inventoryMain .inventoryBody .inventory {
+  /* border: 1px solid red; */
+  height: 90%;
+}
+.inventoryMain .inventoryBody .inventory .inventoryItem {
+  border: 1px solid red;
+  display: inline-flex;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  justify-content: flex-start;
+  /* height: 90%; */
 }

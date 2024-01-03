@@ -17,24 +17,20 @@
             <option value="option3">Option 3</option>
           </select>
         </div>
-        <div class="categories">
-          <label for="options">Categories:</label>
-          <select
-            id="options"
-            [(ngModel)]="selectedOption"
-            (change)="onOptionSelected()"
-          >
-            <option value="option1">All</option>
-            <option value="option2">Option 2</option>
-            <option value="option3">Option 3</option>
-          </select>
-        </div>
       </div>
       <button type="submit">
         <span class="material-symbols-outlined"> add </span> Add Product
       </button>
     </div>
-    <div class="inventory"></div>
+    <div class="inventory">
+      <div class="inventoryItem">
+        <p>1.</p>
+        <div class="producCode">ATX-032113</div>
+        <div class="productName">Tablet</div>
+        <div class="category">Electronics</div>
+        <div class="stock">800</div>
+      </div>
+    </div>
   </div>
   <div class="overview">
     <div class="overviewBody">
