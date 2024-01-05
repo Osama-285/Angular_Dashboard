@@ -128,10 +128,18 @@
   justify-content: center;
   flex-wrap: wrap;
 }
-.inventoryMain .inventoryBody .inventory .inventoryItem .category,
+.inventoryMain .inventoryBody .inventory .inventoryItem .category {
+  width: 18%;
+  border: 1px solid red;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .inventoryMain .inventoryBody .inventory .inventoryItem .stock,
 .inventoryMain .inventoryBody .inventory .inventoryItem .sales {
-  width: 10%;
+  width: 6%;
   border: 1px solid red;
   height: 100%;
   display: flex;
