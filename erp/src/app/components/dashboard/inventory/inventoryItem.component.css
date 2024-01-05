@@ -76,17 +76,102 @@
 .inventoryMain .inventoryBody .inventory {
   /* border: 1px solid red; */
   height: 90%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  overflow: hidden;
 }
-.inventoryMain .inventoryBody .inventory .inventoryItem {
+.inventoryMain .inventoryBody .inventory .inventoryHeading {
+  /* border: 1px solid red; */
+  display: inline-flex;
+  align-items: center;
+  height: 10%;
+  width: 100%;
+  justify-content: flex-start;
+  font-size: 22px;
+  font-weight: 600;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  background-color: rgb(227, 230, 230);
+}
+
+.inventoryMain .inventoryBody .inventory .inventoryHeading p {
+  width: 4%;
+  /* border: 1px solid red; */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inventoryMain .inventoryBody .inventory .inventoryHeading .productCode {
+  width: 12%;
+  /* border: 1px solid red; */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inventoryMain .inventoryBody .inventory .inventoryHeading .productPicture {
+  width: 10%;
+  /* border: 1px solid red; */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inventoryMain .inventoryBody .inventory .inventoryHeading .productDescription {
+  width: 34%;
+  /* border: 1px solid red; */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.inventoryMain .inventoryBody .inventory .inventoryHeading .productName {
+  width: 10%;
+  /* border: 1px solid red; */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.inventoryMain .inventoryBody .inventory .inventoryHeading .category {
+  width: 18%;
+  /* border: 1px solid red; */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inventoryMain .inventoryBody .inventory .inventoryHeading .stock,
+.inventoryMain .inventoryBody .inventory .inventoryHeading .sales {
+  width: 6%;
+  /* border: 1px solid red; */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inventoryMain .inventoryBody .inventory .inventoryList {
+  height: 90%;
   border: 1px solid red;
+}
+.inventoryMain .inventoryBody .inventory .inventoryList .inventoryItem {
+  /* border: 1px solid red; */
   display: inline-flex;
   align-items: center;
   height: 70px;
   width: 100%;
   justify-content: flex-start;
-  font-size: 20px;
+  font-size: 18px;
 }
-.inventoryMain .inventoryBody .inventory .inventoryItem p {
+.inventoryMain .inventoryBody .inventory .inventoryList .inventoryItem p {
   width: 4%;
   border: 1px solid red;
   height: 100%;
@@ -94,7 +179,12 @@
   align-items: center;
   justify-content: center;
 }
-.inventoryMain .inventoryBody .inventory .inventoryItem .productCode {
+.inventoryMain
+  .inventoryBody
+  .inventory
+  .inventoryList
+  .inventoryItem
+  .productCode {
   width: 12%;
   border: 1px solid red;
   height: 100%;
@@ -102,7 +192,12 @@
   align-items: center;
   justify-content: center;
 }
-.inventoryMain .inventoryBody .inventory .inventoryItem .productPicture {
+.inventoryMain
+  .inventoryBody
+  .inventory
+  .inventoryList
+  .inventoryItem
+  .productPicture {
   width: 10%;
   border: 1px solid red;
   height: 100%;
@@ -110,7 +205,12 @@
   align-items: center;
   justify-content: center;
 }
-.inventoryMain .inventoryBody .inventory .inventoryItem .productDescription {
+.inventoryMain
+  .inventoryBody
+  .inventory
+  .inventoryList
+  .inventoryItem
+  .productDescription {
   width: 34%;
   border: 1px solid red;
   height: 100%;
@@ -119,7 +219,12 @@
   justify-content: center;
   flex-wrap: wrap;
 }
-.inventoryMain .inventoryBody .inventory .inventoryItem .productName {
+.inventoryMain
+  .inventoryBody
+  .inventory
+  .inventoryList
+  .inventoryItem
+  .productName {
   width: 10%;
   border: 1px solid red;
   height: 100%;
@@ -128,7 +233,12 @@
   justify-content: center;
   flex-wrap: wrap;
 }
-.inventoryMain .inventoryBody .inventory .inventoryItem .category {
+.inventoryMain
+  .inventoryBody
+  .inventory
+  .inventoryList
+  .inventoryItem
+  .category {
   width: 18%;
   border: 1px solid red;
   height: 100%;
@@ -137,8 +247,8 @@
   justify-content: center;
 }
 
-.inventoryMain .inventoryBody .inventory .inventoryItem .stock,
-.inventoryMain .inventoryBody .inventory .inventoryItem .sales {
+.inventoryMain .inventoryBody .inventory .inventoryList .inventoryItem .stock,
+.inventoryMain .inventoryBody .inventory .inventoryList .inventoryItem .sales {
   width: 6%;
   border: 1px solid red;
   height: 100%;
