@@ -120,3 +120,12 @@ body {
   color: #7c8290;
   font-size: 35px;
 }
+
+.tooltip {
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  z-index: 1;
+}
