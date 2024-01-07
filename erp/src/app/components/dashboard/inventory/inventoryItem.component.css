@@ -256,5 +256,5 @@
   align-items: center;
   justify-content: center;
 }
-.inventoryMain .inventoryBody .inventory .inventoryList .inventoryItem:hover {
-}
+/* .inventoryMain .inventoryBody .inventory .inventoryList .inventoryItem:host {
+} */

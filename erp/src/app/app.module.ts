@@ -16,7 +16,7 @@ import { ToolTipDirective } from './directives/tool-tip.directive';
     AppComponent,
     SignupComponent,
     LoginComponent,
-    ToolTipDirective,
+    // ToolTipDirective,
   ],
   imports: [
     BrowserModule,

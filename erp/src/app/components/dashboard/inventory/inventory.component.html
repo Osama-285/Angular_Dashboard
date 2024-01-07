@@ -37,7 +37,8 @@
         <div
           *ngFor="let products of product"
           class="inventoryItem"
-          [appTooltip]="product"
+          appToolTip
+          [appTooltip]="product[0]"
         >
           <p>1.</p>
           <div class="productCode">ATX-032113</div>
