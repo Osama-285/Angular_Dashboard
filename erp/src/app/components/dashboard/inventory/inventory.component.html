@@ -34,12 +34,7 @@
         <div class="sales">Sales</div>
       </div>
       <div class="inventoryList">
-        <div
-          *ngFor="let products of product"
-          class="inventoryItem"
-          appToolTip
-          [appTooltip]="product[0]"
-        >
+        <div *ngFor="let products of product" class="inventoryItem">
           <p>1.</p>
           <div class="productCode">ATX-032113</div>
           <img class="productPicture" src="" alt="" />

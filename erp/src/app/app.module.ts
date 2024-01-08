@@ -12,12 +12,7 @@ import { DashboardModule } from './components/dashboard/dashboard/dashboard.modu
 import { ReactiveFormsModule } from '@angular/forms';
 import { ToolTipDirective } from './directives/tool-tip.directive';
 @NgModule({
-  declarations: [
-    AppComponent,
-    SignupComponent,
-    LoginComponent,
-    // ToolTipDirective,
-  ],
+  declarations: [AppComponent, SignupComponent, LoginComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
