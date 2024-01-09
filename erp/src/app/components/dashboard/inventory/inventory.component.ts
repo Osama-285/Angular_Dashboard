@@ -8,7 +8,6 @@ import { ToolTipDirective } from 'src/app/directives/tool-tip.directive';
 })
 export class InventoryComponent {
   selectedOption: string = 'option1';
-  hoverdProduct: Object = {};
   hoveredProduct: Object = {};
   products = [
     {
@@ -26,16 +25,16 @@ export class InventoryComponent {
   }
 
   setHoveredProduct(product: Object): void {
-    this.hoverdProduct = product;
-    console.log(this.hoverdProduct);
+    this.hoveredProduct = product;
+    // console.log(this.hoveredProduct);
   }
 
   clearHoveredProduct(): void {
-    this.hoverdProduct = {};
+    this.hoveredProduct = {};
   }
 
   isHovered(product: Object): boolean {
-    console.log('isHovered', product);
+    // console.log('isHovered', product);
     return this.hoveredProduct === product;
   }
 }

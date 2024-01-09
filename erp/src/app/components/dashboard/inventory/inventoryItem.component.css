@@ -160,7 +160,7 @@
 
 .inventoryMain .inventoryBody .inventory .inventoryList {
   height: 90%;
-  /* border: 1px solid red; */
+  position: relative;
 }
 .inventoryMain .inventoryBody .inventory .inventoryList .inventoryItem {
   /* border: 1px solid red; */
@@ -170,7 +170,6 @@
   width: 100%;
   justify-content: flex-start;
   font-size: 18px;
-  position: relative;
 }
 .inventoryMain .inventoryBody .inventory .inventoryList .inventoryItem p {
   width: 4%;
@@ -263,4 +262,5 @@
   width: 15%;
   z-index: 1;
   background-color: white;
+  border: 1px solid red;
 }
