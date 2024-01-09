@@ -170,6 +170,7 @@
   width: 100%;
   justify-content: flex-start;
   font-size: 18px;
+  position: relative;
 }
 .inventoryMain .inventoryBody .inventory .inventoryList .inventoryItem p {
   width: 4%;
@@ -256,12 +257,10 @@
   align-items: center;
   justify-content: center;
 }
-.inventoryMain
-  .inventoryBody
-  .inventory
-  .inventoryList
-  .inventoryItem
-  .hover-container {
-  position: relative;
-  display: inline-block;
+.inventoryMain .inventoryBody .inventory .inventoryList .inventoryItem .card {
+  position: absolute;
+  height: 40%;
+  width: 15%;
+  z-index: 1;
+  background-color: white;
 }

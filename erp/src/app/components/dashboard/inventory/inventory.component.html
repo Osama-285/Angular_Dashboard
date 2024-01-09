@@ -34,7 +34,12 @@
         <div class="sales">Sales</div>
       </div>
       <div class="inventoryList">
-        <div *ngFor="let products of product" class="inventoryItem">
+        <div
+          *ngFor="let product of products"
+          class="inventoryItem"
+          (mouseenter)="setHoveredProduct(product)"
+          (mouseleave)="clearHoveredProduct()"
+        >
           <p>1.</p>
           <div class="productCode">ATX-032113</div>
           <img class="productPicture" src="" alt="" />
@@ -46,6 +51,11 @@
           <div class="category">Electronics</div>
           <div class="stock">800</div>
           <div class="sales">150</div>
+
+          <div *ngIf="isHovered(product)" class="card">
+            <h3>{{ product.productCode }}</h3>
+            <h3>{{ product.category }}</h3>
+          </div>
         </div>
       </div>
     </div>
