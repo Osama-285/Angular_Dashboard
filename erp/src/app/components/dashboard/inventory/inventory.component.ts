@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ToolTipDirective } from 'src/app/directives/tool-tip.directive';
+import { productInfo } from 'src/app/constants/inventory.constants';
 @Component({
   selector: 'app-inventory',
   templateUrl: './inventory.component.html',
@@ -9,17 +9,7 @@ import { ToolTipDirective } from 'src/app/directives/tool-tip.directive';
 export class InventoryComponent {
   selectedOption: string = 'option1';
   hoveredProduct: Object = {};
-  products = [
-    {
-      productCode: 'ATX-032113',
-      productName: 'Tablet',
-      description:
-        ' Lorem ipsum dolor sit, amet consectetur adipisicing elit.Exercitationem, asperiores.',
-      category: 'Electronic',
-      stock: '1200',
-      sales: '450',
-    },
-  ];
+  products = productInfo;
   onOptionSelected(): void {
     console.log('Selected Option:', this.selectedOption);
   }

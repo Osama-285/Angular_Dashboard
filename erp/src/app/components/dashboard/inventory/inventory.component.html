@@ -41,16 +41,13 @@
           (mouseleave)="clearHoveredProduct()"
         >
           <p>1.</p>
-          <div class="productCode">ATX-032113</div>
+          <div class="productCode">{{ product.productCode }}</div>
           <img class="productPicture" src="" alt="" />
-          <div class="productName">Tablet</div>
-          <div class="productDescription">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Exercitationem, asperiores.
-          </div>
-          <div class="category">Electronics</div>
-          <div class="stock">800</div>
-          <div class="sales">150</div>
+          <div class="productName">{{ product.productName }}</div>
+          <div class="productDescription">{{ product.description }}</div>
+          <div class="category">{{ product.category }}</div>
+          <div class="stock">{{ product.stock }}</div>
+          <div class="sales">{{ product.sales }}</div>
 
           <div *ngIf="isHovered(product)" class="card">
             <h3>{{ product.productCode }}</h3>
