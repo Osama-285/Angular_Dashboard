@@ -35,3 +35,9 @@
   background-color: #0560fd;
   border: none;
 }
+.products .productsBody {
+  border: 1px solid red;
+  width: 100%;
+  height: 90%;
+  padding-top: 10px;
+}
