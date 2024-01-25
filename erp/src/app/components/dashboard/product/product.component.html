@@ -6,14 +6,14 @@
     <button type="button">Add Product</button>
   </div>
   <div class="productsBody">
-    <div
-      class="allCards"
-      *ngFor="
-        let product of allProduct
-          | paginate : { itemsPerPage: psize, currentPage: currentPage }
-      "
-    >
-      <div class="card">
+    <div class="allCards">
+      <div
+        class="card"
+        *ngFor="
+          let product of allProduct
+            | paginate : { itemsPerPage: psize, currentPage: currentPage }
+        "
+      >
         <div class="cardImage"></div>
         <div class="cardBody">
           <div class="productInfo">
@@ -26,8 +26,10 @@
         </div>
       </div>
     </div>
-    <pagination-controls
-      (pageChange)="currentPage = $event"
-    ></pagination-controls>
+    <div class="productBottom">
+      <pagination-controls
+        (pageChange)="currentPage = $event"
+      ></pagination-controls>
+    </div>
   </div>
 </div>

@@ -7,6 +7,6 @@ import { products } from 'src/app/constants/product.constants';
 })
 export class ProductComponent {
   protected allProduct = products;
-  psize = 5;
+  psize = 12;
   currentPage = 1;
 }
