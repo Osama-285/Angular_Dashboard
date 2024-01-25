@@ -11,6 +11,7 @@ import { ChatComponent } from '../chat/chat.component';
 import { SettingsComponent } from '../settings/settings.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ToolTipDirective } from 'src/app/directives/tool-tip.directive';
+import { NgxPaginationModule } from 'ngx-pagination';
 @NgModule({
   declarations: [
     InvoicesComponent,
@@ -28,6 +29,7 @@ import { ToolTipDirective } from 'src/app/directives/tool-tip.directive';
     DashboardRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    NgxPaginationModule,
   ],
 })
 export class DashboardModule {}

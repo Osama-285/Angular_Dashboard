@@ -5,4 +5,8 @@ import { products } from 'src/app/constants/product.constants';
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.css'],
 })
-export class ProductComponent {}
+export class ProductComponent {
+  protected allProduct = products;
+  psize = 5;
+  currentPage = 1;
+}
