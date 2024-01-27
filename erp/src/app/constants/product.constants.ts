@@ -16,7 +16,7 @@ export const products = [
   {
     image: '',
     storeName: '',
-    name: 'Lorem ipsum',
+    name: 'zy',
     descrption: 'Lorem ipsum dolor sit amet consectetur.',
     inStock: '23',
   },

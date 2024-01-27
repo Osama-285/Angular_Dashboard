@@ -4,13 +4,19 @@
 <div class="products">
   <div class="productsTop">
     <button type="button">Add Product</button>
+    <input
+      type="text"
+      [(ngModel)]="searchText"
+      name="searchBar"
+      id="searchBar"
+    />
   </div>
   <div class="productsBody">
     <div class="allCards">
       <div
         class="card"
         *ngFor="
-          let product of allProduct
+          let product of filteredItems
             | paginate : { itemsPerPage: psize, currentPage: currentPage }
         "
       >
