@@ -129,3 +129,27 @@ body {
   border-radius: 4px;
   z-index: 1;
 }
+.client .clientTop button,
+.products .productsTop button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 80%;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  border-color: #0560fd;
+  color: #0560fd;
+  border-radius: 6px;
+  background-color: white;
+}
+.products .productsTop button:hover,
+.client .clientTop button:hover {
+  color: white;
+  background-color: #0560fd;
+  border: none;
+  cursor: pointer;
+}

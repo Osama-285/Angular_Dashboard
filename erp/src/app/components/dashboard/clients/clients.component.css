@@ -1,0 +1,11 @@
+.client {
+  /* border: 1px solid red; */
+  height: 95%;
+}
+.client .clientTop {
+  border: 1px solid blue;
+  height: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
