@@ -3,9 +3,14 @@
   height: 95%;
 }
 .client .clientTop {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   height: 8%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+}
+.client .clientBody {
+  border: 1px solid red;
+  height: 92%;
+  padding-top: 10px;
 }
