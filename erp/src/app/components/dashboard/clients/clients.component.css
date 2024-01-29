@@ -39,15 +39,19 @@
 .client .clientBody .clientCards .cards .clientRevenue .revenue {
   height: 100%;
   width: 30%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-size: 20px;
+  font-size: 25px;
   justify-content: center;
 }
 .client .clientBody .clientCards .cards .clientRevenue .revenue .icon {
-  background-color: #0560fd;
+  background-color: #b9f7ba85;
+  margin-right: 10px;
+  font-size: 30px;
+  color: #21f321;
+  border-radius: 50%;
 }
 
 .client .clientBody .clientCards .cards .buttons {
