@@ -36,15 +36,18 @@
   display: flex;
   flex-direction: row;
 }
-.client .clientBody .clientCards .cards .clientRevenue .revenue {
+.client .clientBody .clientCards .cards .clientRevenue .revenue,
+.client .clientBody .clientCards .cards .clientRevenue .invoices,
+.client .clientBody .clientCards .cards .clientRevenue .paid,
+.client .clientBody .clientCards .cards .clientRevenue .due {
   height: 100%;
-  width: 30%;
-  /* border: 1px solid red; */
+  width: 25%;
   display: flex;
   flex-direction: row;
   align-items: center;
   font-size: 25px;
   justify-content: center;
+  /* border: 1px solid red; */
 }
 .client .clientBody .clientCards .cards .clientRevenue .revenue .icon {
   background-color: #b9f7ba85;
@@ -52,6 +55,44 @@
   font-size: 30px;
   color: #21f321;
   border-radius: 50%;
+}
+
+.client .clientBody .clientCards .cards .clientRevenue .invoices .icon {
+  background-color: #81c1ff4a;
+  margin-right: 10px;
+  font-size: 25px;
+  color: #21adf3;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.client .clientBody .clientCards .cards .clientRevenue .paid .icon {
+  background-color: #c181ff4a;
+  margin-right: 10px;
+  font-size: 25px;
+  color: #651cef;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.client .clientBody .clientCards .cards .clientRevenue .due .icon {
+  background-color: #f790904a;
+  margin-right: 10px;
+  font-size: 25px;
+  color: #ff0808;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .client .clientBody .clientCards .cards .buttons {
