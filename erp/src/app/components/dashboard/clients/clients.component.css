@@ -10,11 +10,16 @@
 .client .clientBody {
   height: 92%;
   padding-top: 8px;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .client .clientBody .clientCards {
   height: 95%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .client .clientBody .clientCards .cards {
@@ -22,8 +27,14 @@
   height: 44%;
   background-color: white;
   border-radius: 8px;
-  margin: 0px 14px;
+  margin: 0px 2%;
   padding: 10px;
+  transition: all 0.3s ease;
+}
+.client .clientBody .clientCards .cards:hover {
+  border-color: #828282;
+  transform: scale(1.1);
+  cursor: pointer;
 }
 .client .clientBody .clientCards .cards .clientImage {
   height: 60%;
@@ -105,10 +116,18 @@
 .client .clientBody .clientCards .cards button {
   width: 120px;
   height: 80%;
-  font-size: 21px;
+  font-size: 24px;
   color: #0560fd;
   background-color: white;
   border-radius: 8px;
   border: 1px solid #0560fd;
   font-weight: 400;
+}
+.client .clientBody .clientCards .cards button:hover {
+  color: white;
+  background-color: #0560fd;
+  border-radius: 8px;
+  border: none;
+  font-weight: 400;
+  cursor: pointer;
 }

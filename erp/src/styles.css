@@ -145,6 +145,7 @@ body {
   border: none;
   color: #0560fd;
   border-radius: 6px;
+  font-size: 20px;
   background-color: white;
 }
 .products .productsTop button:hover,
