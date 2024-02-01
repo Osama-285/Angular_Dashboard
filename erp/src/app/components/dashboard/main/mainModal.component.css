@@ -12,7 +12,7 @@
 
 .modal-content {
   background-color: #fefefe;
-
+  border-radius: 16px;
   border: 1px solid #888;
   width: 30%;
   height: 70%;
@@ -68,18 +68,18 @@
   height: 60%;
 }
 .modal .modal-content form .inputField {
-  margin: 10px 0px;
   height: 20px;
-  font-size: 15px;
+  font-size: 22px;
   color: #7c8290;
   font-weight: 600;
+  margin: 22px 0px;
 }
 .modal .modal-content form .inputField input {
   height: 30px;
   width: 60%;
 
   color: #7c8290;
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 500;
   border: none;
   background-color: transparent;
@@ -89,7 +89,7 @@
   outline: none !important;
   background-color: transparent;
   color: #7c8290;
-  font-size: 16px;
+  font-size: 24px;
 }
 .modal .modal-content form .formBtns {
   height: 40px;
@@ -102,12 +102,13 @@
   height: 83%;
   margin: 0px 8px;
   border-radius: 8px;
+  font-size: 24px;
 }
 .modal .modal-content form .formBtns .savebtn {
   background-color: rgb(223, 246, 223);
   color: rgb(3, 172, 3);
   border: none;
-  font-size: 15px;
+  font-size: 20px;
 }
 .modal
   .modal-content
@@ -116,18 +117,20 @@
   .savebtn:hover.savebtn:hover:not([disabled]) {
   background-color: rgb(3, 176, 3);
   color: white;
-  font-size: 15px;
+  font-size: 20px;
   transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 .modal .modal-content form .formBtns .closeBtn {
   background-color: rgb(249, 217, 217);
   color: red;
-  font-size: 15px;
+  font-size: 20px;
   border: none;
 }
 .modal .modal-content form .formBtns .closeBtn:hover {
   color: white;
   background-color: red;
+  cursor: pointer;
   transition: background-color 0.3s ease;
 }
 .modal .modal-content .shortInfo {

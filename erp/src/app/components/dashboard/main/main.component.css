@@ -119,8 +119,9 @@
   height: 35px;
   background-color: transparent;
   color: #7c8290;
-  font-size: 16px;
-  font-weight: 600;
+  padding-left: 10px;
+  font-size: 24px;
+  font-weight: 200;
 }
 .main .main_components .searchBar .searchInput button {
   border: none;
@@ -138,12 +139,12 @@
   height: 35px;
   background-color: transparent;
   color: #7c8290;
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 600;
 }
 .main .main_components .searchBar .searchInput input:focus {
   outline: none !important;
-  font-size: 16px;
+  font-size: 24px;
   color: #7c8290;
 }
 .main .main_components .component_display {
@@ -171,9 +172,9 @@
   background-color: transparent;
   border: none;
 }
-/* .main .main_components .searchBar .profileInfo .profileBtn:hover {
-  border: 1px solid #0560fd;
-} */
+.main .main_components .searchBar .profileInfo .profileBtn:hover {
+  cursor: pointer;
+}
 .main .main_components .searchBar .profileInfo .profileBtn h3 {
   background-color: #0560fd;
   font-size: 35px;
@@ -189,12 +190,13 @@
   margin-right: 8px;
 }
 .main .main_components .searchBar .profileInfo .profileBtn .profileDate .name {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 600;
   color: #7c8290;
   text-align: left;
 }
 .main .main_components .searchBar .profileInfo .profileBtn .profileDate .email {
-  font-weight: 600;
+  font-weight: 200;
   color: #7c8290;
+  font-size: 20px;
 }
