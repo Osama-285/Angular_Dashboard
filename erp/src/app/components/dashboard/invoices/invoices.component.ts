@@ -15,4 +15,8 @@ export class InvoicesComponent {
     this.openForm = true;
     console.log('CLICK');
   }
+
+  closeModal() {
+    this.openForm = false;
+  }
 }

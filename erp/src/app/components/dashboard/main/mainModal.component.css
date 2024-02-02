@@ -1,41 +1,4 @@
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 25px;
-  font-weight: bold;
-  cursor: pointer;
-  background-color: rgb(249, 217, 217);
-  width: 35px;
-  height: 35px;
-  display: flex;
-  align-items: center;
-  color: red;
-  justify-content: center;
-  border-radius: 7px;
-}
-
-.close:hover,
-.close:focus {
-  background-color: red;
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.modal .modal-content .modal-top {
-  width: 100%;
-  height: 10%;
-}
-.modal .modal-content .modal-top h2 {
-  font-size: 40px;
-  color: #7c8290;
-}
-.modal .modal-content .modal-top span {
-  font-size: 20px;
-}
 .modal .modal-content form {
-  /* border: 1px solid red; */
   height: 60%;
 }
 .modal .modal-content form .inputField {
