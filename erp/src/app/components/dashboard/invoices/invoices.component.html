@@ -16,8 +16,9 @@
   <div class="invoiceBottom">
     <div class="invoiceBtns">
       <button type="button">Filter</button>
-      <button type="button">
-        <span class="material-symbols-outlined"> add </span> Invoice
+      <button type="button" (click)="invoiceForm()">
+        <span class="material-symbols-outlined"> add </span>
+        Invoice
       </button>
     </div>
     <div class="invoiceTable">
@@ -49,4 +50,8 @@
       </div>
     </div>
   </div>
+</div>
+
+<div class="modal" [ngClass]="{ open: openForm }">
+  <div class="modal-content"></div>
 </div>
