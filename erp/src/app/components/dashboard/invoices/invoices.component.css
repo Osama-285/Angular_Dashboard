@@ -38,7 +38,6 @@
   margin-right: 8px;
 }
 
-/* Colors */
 .color1 {
   color: #cfbfad;
 }
@@ -53,4 +52,49 @@
 
 .color4 {
   color: #cb4c46;
+}
+
+.modal .modal-content .formBody {
+  height: 80%;
+}
+.modal .modal-content .formBottom {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.modal .modal-content .formBottom button {
+  width: 120px;
+  height: 75%;
+  margin: 0px 12px;
+  border-radius: 9px;
+  font-size: 22px;
+}
+
+.modal .modal-content .formBottom .savebtn {
+  background-color: rgb(217, 240, 249);
+  color: #0560fd;
+  border: none;
+}
+
+.modal .modal-content .formBottom .closeBtn {
+  background-color: rgb(249, 217, 217);
+  color: red;
+  border: none;
+}
+.modal .modal-content .formBottom .closeBtn:hover,
+.modal .modal-content .formBottom .closeBtn:focus {
+  background-color: red;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.modal .modal-content .formBottom .savebtn:hover,
+.modal .modal-content .formBottom .savebtn:focus {
+  background-color: #0560fd;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
