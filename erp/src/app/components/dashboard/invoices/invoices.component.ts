@@ -1,11 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { invoiceInfo, tableInfor } from 'src/app/constants/invoices.constants';
-import {
-  FormBuilder,
-  FormGroup,
-  FormControl,
-  Validators,
-} from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 @Component({
   selector: 'app-invoices',
   templateUrl: './invoices.component.html',
@@ -23,10 +18,15 @@ export class InvoicesComponent {
   ngOnInit(): void {
     this.invoiceFormData = this.fb.group({
       client: ['', Validators.required],
-      invoiceNumber: ['', Validators.required],
+      invoiceNumber: [
+        '',
+        Validators.required,
+        Validators.pattern('^[a-zA-Z0-9]*$'),
+      ],
       amount: ['', Validators.required, Validators.pattern('^[0-9]*$')],
       description: ['', Validators.required],
       paymentStatus: [false, Validators.required],
+      dueDate: ['', Validators.required],
     });
   }
 
@@ -37,4 +37,6 @@ export class InvoicesComponent {
   closeModal() {
     this.openForm = false;
   }
+
+  onSubmit() {}
 }
