@@ -98,3 +98,33 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
+.modal .modal-content .formBody .common {
+  /* border: 1px solid red; */
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin: 6px 0px 28px 0px;
+}
+.modal .modal-content .formBody .common label {
+  font-size: 24px;
+  margin-right: 12px;
+}
+.modal .modal-content .formBody .common input {
+  width: 50%;
+  height: 90%;
+  border-radius: 8px;
+  border-color: transparent;
+  font-size: 24px;
+  background-color: #eff8fe;
+  color: #7c8290;
+}
+.modal .modal-content .formBody .common input:focus {
+  outline: none !important;
+  background-color: transparent;
+  color: #7c8290;
+  font-size: 24px;
+}
+.modal .modal-content .formBody .description {
+  border: 1px solid red;
+}

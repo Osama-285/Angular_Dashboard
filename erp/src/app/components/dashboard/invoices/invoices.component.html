@@ -62,8 +62,8 @@
     </div>
     <div class="formBody">
       <form [formGroup]="invoiceFormData" (ngSubmit)="onSubmit()">
-        <div class="client">
-          <label for="client">Client</label>
+        <div class="client common">
+          <label for="client">Client:</label>
           <input
             type="text"
             name="client"
@@ -71,8 +71,8 @@
             formControlName="client"
           />
         </div>
-        <div class="invNum">
-          <label for="invNum">Invoice Number</label>
+        <div class="invNum common">
+          <label for="invNum">Invoice Number:</label>
           <input
             type="text"
             name="invNum"
@@ -80,8 +80,8 @@
             formControlName="invNum"
           />
         </div>
-        <div class="amount">
-          <label for="amount">Amount</label>
+        <div class="amount common">
+          <label for="amount">Amount:</label>
           <input
             type="number"
             name="amount"
@@ -89,8 +89,8 @@
             formControlName="amount"
           />
         </div>
-        <div class="dueDate">
-          <label for="amount">Due Date</label>
+        <div class="dueDate common">
+          <label for="amount">Due Date:</label>
           <input
             type="text"
             name="dueDate"
@@ -98,8 +98,8 @@
             formControlName="dueDate"
           />
         </div>
-        <div class="description">
-          <label for="desc">Description</label>
+        <div class="description common">
+          <label for="desc">Description: </label>
           <input
             type="text"
             name="desc"
