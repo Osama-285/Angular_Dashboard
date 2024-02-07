@@ -73,12 +73,7 @@
         </div>
         <div class="invNum common">
           <label for="invNum">Invoice Number:</label>
-          <input
-            type="text"
-            name="invNum"
-            id="invNum"
-            formControlName="invNum"
-          />
+          <input type="text" name="invNum" id="invNum" />
         </div>
         <div class="amount common">
           <label for="amount">Amount:</label>
@@ -98,16 +93,26 @@
             formControlName="dueDate"
           />
         </div>
-        <div class="description common">
+        <div class="description">
           <label for="desc">Description: </label>
-          <input
+          <textarea
             type="text"
             name="desc"
             id="desc"
             formControlName="description"
-          />
+          ></textarea>
         </div>
-        <div class="status"></div>
+        <div class="status">
+          <label for="statusCheck">Status: </label>
+          <div class="statusFields">
+            <label for="paid"
+              ><input type="radio" name="status" value="paid" /> Paid</label
+            >
+            <label for="due"
+              ><input type="radio" name="status" value="due" /> Due</label
+            >
+          </div>
+        </div>
       </form>
     </div>
     <div class="formBottom">
