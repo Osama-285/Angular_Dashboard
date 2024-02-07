@@ -73,7 +73,12 @@
         </div>
         <div class="invNum common">
           <label for="invNum">Invoice Number:</label>
-          <input type="text" name="invNum" id="invNum" />
+          <input
+            type="text"
+            name="invNum"
+            formControlName="invoiceNumber"
+            id="invNum"
+          />
         </div>
         <div class="amount common">
           <label for="amount">Amount:</label>
@@ -106,20 +111,32 @@
           <label for="statusCheck">Status: </label>
           <div class="statusFields">
             <label for="paid"
-              ><input type="radio" name="status" value="paid" /> Paid</label
+              ><input
+                type="radio"
+                name="paymentStatus"
+                formControlName="paymentStatus"
+                value="paid"
+              />
+              Paid</label
             >
             <label for="due"
-              ><input type="radio" name="status" value="due" /> Due</label
+              ><input
+                type="radio"
+                name="paymentStatus"
+                formControlName="paymentStatus"
+                value="due"
+              />
+              Due</label
             >
           </div>
         </div>
+        <div class="formBottom">
+          <button type="submit" class="savebtn">Create</button>
+          <button type="button" class="closeBtn" (click)="closeModal()">
+            Cancel
+          </button>
+        </div>
       </form>
-    </div>
-    <div class="formBottom">
-      <button type="submit" class="savebtn">Create</button>
-      <button type="button" class="closeBtn" (click)="closeModal()">
-        Cancel
-      </button>
     </div>
   </div>
 </div>

@@ -20,12 +20,11 @@ export class InvoicesComponent {
       client: ['', Validators.required],
       invoiceNumber: [
         '',
-        Validators.required,
-        Validators.pattern('^[a-zA-Z0-9]*$'),
+        [Validators.required, Validators.pattern('^[a-zA-Z0-9]*$')],
       ],
-      amount: ['', Validators.required, Validators.pattern('^[0-9]*$')],
+      amount: ['', [Validators.required, Validators.pattern('^[0-9]*$')]],
       description: ['', Validators.required],
-      paymentStatus: [false, Validators.required],
+      paymentStatus: ['', Validators.required],
       dueDate: ['', Validators.required],
     });
   }
@@ -38,5 +37,9 @@ export class InvoicesComponent {
     this.openForm = false;
   }
 
-  onSubmit() {}
+  onSubmit() {
+    console.log('Profile tab', this.invoiceFormData.value);
+    this.openForm = false;
+    this.invoiceFormData.reset();
+  }
 }
