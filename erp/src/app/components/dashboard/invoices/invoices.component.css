@@ -74,6 +74,19 @@
   font-size: 22px;
 }
 
+.modal .modal-content .formBody .formBottom button[disabled] {
+  /* Add styles for disabled state */
+  opacity: 0.5; /* Reduce opacity for disabled state */
+  cursor: not-allowed; /* Change cursor for disabled state */
+  /* Add more styles as needed */
+}
+.modal .modal-content .formBody .formBottom button[disabled]:hover {
+  background-color: rgb(217, 240, 249);
+  color: #0560fd;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
 .modal .modal-content .formBody .formBottom .savebtn {
   background-color: rgb(217, 240, 249);
   color: #0560fd;

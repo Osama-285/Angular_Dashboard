@@ -131,7 +131,13 @@
           </div>
         </div>
         <div class="formBottom">
-          <button type="submit" class="savebtn">Create</button>
+          <button
+            [disabled]="!invoiceFormData.valid"
+            type="submit"
+            class="savebtn"
+          >
+            Create
+          </button>
           <button type="button" class="closeBtn" (click)="closeModal()">
             Cancel
           </button>
