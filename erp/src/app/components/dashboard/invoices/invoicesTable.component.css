@@ -131,8 +131,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 18px;
+  color: #7c8290;
 }
 .invoice .invoiceBottom .invoiceTable .tableContent ul li .cell2 {
   height: 100%;
@@ -140,8 +141,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 18px;
+  color: #7c8290;
 }
 .invoice .invoiceBottom .invoiceTable .tableContent ul li .cell4 {
   height: 100%;
@@ -149,11 +151,12 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 18px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  color: #7c8290;
 }
 .invoice .invoiceBottom .invoiceTable .tableContent ul li .status p {
   width: 50px;
