@@ -10,7 +10,8 @@ import { MainComponent } from './components/dashboard/main/main.component';
 import { DashboardModule } from './components/dashboard/dashboard/dashboard.module';
 
 import { ReactiveFormsModule } from '@angular/forms';
-import { ToolTipDirective } from './directives/tool-tip.directive';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [AppComponent, SignupComponent, LoginComponent],
   imports: [
@@ -18,6 +19,7 @@ import { ToolTipDirective } from './directives/tool-tip.directive';
     AppRoutingModule,
     DashboardModule,
     ReactiveFormsModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

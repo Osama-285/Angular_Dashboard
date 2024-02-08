@@ -12,6 +12,10 @@ import { SettingsComponent } from '../settings/settings.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ToolTipDirective } from 'src/app/directives/tool-tip.directive';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatInputModule } from '@angular/material/input';
+import { MatNativeDateModule } from '@angular/material/core';
+import { DatePipe } from '@angular/common';
 @NgModule({
   declarations: [
     InvoicesComponent,
@@ -30,6 +34,10 @@ import { NgxPaginationModule } from 'ngx-pagination';
     FormsModule,
     ReactiveFormsModule,
     NgxPaginationModule,
+    MatDatepickerModule,
+    MatInputModule,
+    MatNativeDateModule,
   ],
+  providers: [DatePipe],
 })
 export class DashboardModule {}

@@ -128,6 +128,7 @@
 .modal .modal-content .formBody .status label {
   font-size: 24px;
   margin-right: 12px;
+  color: #9d9292;
 }
 .modal .modal-content .formBody .common input {
   width: 50%;
@@ -137,6 +138,14 @@
   font-size: 24px;
   background-color: #eff8fe;
   color: #7c8290;
+}
+.modal .modal-content .formBody .common mat-form-field {
+  width: 76%;
+  padding: 0px !important;
+}
+
+.modal .modal-content .formBody .common mat-form-field input {
+  border: 1px solid red;
 }
 .modal .modal-content .formBody .description textarea:focus,
 .modal .modal-content .formBody .common input:focus {
@@ -184,4 +193,20 @@
 .modal .modal-content .formBody .status .statusFields label input:hover {
   cursor: pointer;
   accent-color: #0560fd;
+}
+
+.modal[_ngcontent-ng-c3062464790]
+  .modal-content[_ngcontent-ng-c3062464790]
+  .formBody[_ngcontent-ng-c3062464790]
+  .common[_ngcontent-ng-c3062464790]
+  mat-form-field[_ngcontent-ng-c3062464790]
+  input[_ngcontent-ng-c3062464790] {
+  border: 1px solid red;
+  height: 5vh;
+}
+.mdc-text-field--no-label:not(.mdc-text-field--outlined):not(
+    .mdc-text-field--textarea
+  )
+  .mat-mdc-form-field-infix {
+  padding: 0px;
 }
