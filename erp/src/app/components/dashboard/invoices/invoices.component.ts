@@ -37,6 +37,7 @@ export class InvoicesComponent {
 
   closeModal() {
     this.openForm = false;
+    this.invoiceFormData.reset();
   }
 
   onSubmit() {
