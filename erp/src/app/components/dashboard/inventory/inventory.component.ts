@@ -4,10 +4,10 @@ import { productInfo } from 'src/app/constants/inventory.constants';
   selector: 'app-inventory',
   templateUrl: './inventory.component.html',
   styleUrls: ['./inventory.component.css', './inventoryItem.component.css'],
-  // directives: [ToolTipDirective],
 })
 export class InventoryComponent {
   selectedOption: string = 'option1';
+  openForm: boolean = false;
   hoveredProduct: Object = {};
   products = productInfo;
   onOptionSelected(): void {
@@ -16,7 +16,6 @@ export class InventoryComponent {
 
   setHoveredProduct(product: Object): void {
     this.hoveredProduct = product;
-    // console.log(this.hoveredProduct);
   }
 
   clearHoveredProduct(): void {
@@ -24,7 +23,14 @@ export class InventoryComponent {
   }
 
   isHovered(product: Object): boolean {
-    // console.log('isHovered', product);
     return this.hoveredProduct === product;
+  }
+
+  productForm() {
+    this.openForm = true;
+  }
+
+  closeModal() {
+    this.openForm = false;
   }
 }

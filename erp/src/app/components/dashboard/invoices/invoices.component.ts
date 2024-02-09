@@ -51,13 +51,4 @@ export class InvoicesComponent {
   formatDate(date: Date): string | null {
     return this.datePipe.transform(date, 'dd MMMM, yyyy'); // Format the date
   }
-
-  // Event handler for date change
-  // onDateChange(event: MatDatepickerInputEvent<Date>): void {
-  //   const selectedDate = event.value; // Get the selected date
-  //   if (selectedDate) {
-  //     const formattedDate = this.formatDate(selectedDate); // Format the selected date
-  //     this.invoiceFormData.controls['dueDate'].setValue(formattedDate); // Set the formatted date in the form control
-  //   }
-  // }
 }
