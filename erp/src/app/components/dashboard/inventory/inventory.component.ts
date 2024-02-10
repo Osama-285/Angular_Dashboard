@@ -11,15 +11,15 @@ export class InventoryComponent {
   hoveredProduct: Object = {};
   products = productInfo;
   onOptionSelected(): void {
-    console.log('Selected Option:', this.selectedOption);
+    // console.log('Selected Option:', this.selectedOption);
   }
 
   setHoveredProduct(product: Object): void {
-    this.hoveredProduct = product;
+    // this.hoveredProduct = product;
   }
 
   clearHoveredProduct(): void {
-    this.hoveredProduct = {};
+    // this.hoveredProduct = {};
   }
 
   isHovered(product: Object): boolean {
