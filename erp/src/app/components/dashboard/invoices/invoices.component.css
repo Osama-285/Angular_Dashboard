@@ -54,17 +54,9 @@
   color: #cb4c46;
 }
 
-.modal .modal-content .formBody .formBottom button {
-  width: 120px;
-  height: 75%;
-  margin: 0px 12px;
-  border-radius: 9px;
-  font-size: 22px;
-}
-
 .modal .modal-content .formBody .formBottom button[disabled] {
-  opacity: 0.5; /* Reduce opacity for disabled state */
-  cursor: not-allowed; /* Change cursor for disabled state */
+  opacity: 0.5;
+  cursor: not-allowed;
   /* Add more styles as needed */
 }
 .modal .modal-content .formBody .formBottom button[disabled]:hover {
@@ -74,7 +66,7 @@
   cursor: pointer;
 }
 
-.modal .modal-content .formBody .formBottom .savebtn {
+/* .modal .modal-content .formBody .formBottom .savebtn {
   background-color: rgb(217, 240, 249);
   color: #0560fd;
   border: none;
@@ -100,7 +92,7 @@
   text-decoration: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
-}
+} */
 
 .modal .modal-content .formBody .common mat-form-field {
   width: 40%;
