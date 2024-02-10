@@ -223,5 +223,75 @@ body {
   font-weight: 900;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* *** */
+.modal .modal-content .formBody {
+  height: 90%;
+}
+.modal .modal-content .formBody form {
+  height: 100%;
+}
+
+.modal .modal-content .formBody .common,
+.modal .modal-content .formBody .status {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin: 6px 0px 28px 0px;
+}
+.modal .modal-content .formBody .common label,
+.modal .modal-content .formBody .description label,
+.modal .modal-content .formBody .status label {
+  font-size: 24px;
+  margin-right: 12px;
+  color: #9d9292;
+}
+.modal .modal-content .formBody .common input {
+  width: 50%;
+  height: 90%;
+  border-radius: 8px;
+  border-color: transparent;
+  font-size: 24px;
+  background-color: #eff8fe;
+  color: #7c8290;
+}
+.modal .modal-content .formBody .description textarea:focus,
+.modal .modal-content .formBody .common input:focus {
+  outline: none !important;
+  background-color: transparent;
+  color: #7c8290;
+  font-size: 24px;
+}
+.modal .modal-content .formBody .description {
+  height: 180px;
+  display: flex;
+  align-items: flex-start;
+  margin: 6px 0px 28px 0px;
+}
+
+.modal .modal-content .formBody .description textarea {
+  width: 80%;
+  height: 90%;
+  border-radius: 8px;
+  border-color: transparent;
+  font-size: 24px;
+  background-color: #eff8fe;
+  color: #7c8290;
+  display: flex;
+  align-items: flex-start;
+  line-height: 1.5em;
+}
+.modal .modal-content .formBody form .formBottom {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
