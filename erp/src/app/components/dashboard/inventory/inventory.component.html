@@ -102,8 +102,28 @@
           <input type="text" name="code" id="" />
         </div>
         <div class="product common">
-          <label for="">Image: </label>
-          <input type="image" src="" alt="" />
+          <label for="imageInput">Image:</label>
+          <!-- Use a file input type to allow image selection -->
+          <input
+            type="file"
+            id="imageInput"
+            (change)="onImageSelected($event)"
+            accept="image/*"
+            formControlName="image"
+          />
+          <!-- Display the selected image filename or other information -->
+          <span *ngIf="productAddForm.get('image')?.value">{{
+            productAddForm.get("image")?.value.name
+          }}</span>
+          <!-- Display error message if image field is invalid -->
+          <div
+            *ngIf="
+              productAddForm.get('image')?.invalid &&
+              productAddForm.get('image')?.touched
+            "
+          >
+            Please select an image.
+          </div>
         </div>
         <div class="brand common">
           <label for="brand">Brand: </label>

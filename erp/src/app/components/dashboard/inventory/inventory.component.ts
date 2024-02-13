@@ -12,6 +12,7 @@ export class InventoryComponent {
   hoveredProduct: Object = {};
   products = productInfo;
   protected productAddForm!: FormGroup;
+  selectedImage: File | null = null;
 
   constructor(private fb: FormBuilder) {}
 
@@ -23,12 +24,19 @@ export class InventoryComponent {
       categories: ['', Validators.required],
       stock: ['', Validators.required],
       sales: ['', Validators.required],
+      image: [null, Validators.required],
     });
   }
   onOptionSelected(): void {
     // console.log('Selected Option:', this.selectedOption);
   }
-
+  onImageSelected(event: any) {
+    const file: File = event.target.files[0]; // Get the selected file
+    if (file) {
+      this.selectedImage = file; // Set the selected image file
+      this.productAddForm.get('image')?.setValue(file); // Set the form control value to the selected file
+    }
+  }
   setHoveredProduct(product: Object): void {
     // this.hoveredProduct = product;
   }
