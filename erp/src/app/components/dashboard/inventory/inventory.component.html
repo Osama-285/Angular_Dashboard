@@ -103,22 +103,20 @@
         </div>
         <div class="product common">
           <label for="imageInput">Image:</label>
-          <!-- Use a file input type to allow image selection -->
           <input
             type="file"
             id="imageInput"
             (change)="onImageSelected($event)"
             accept="image/*"
             formControlName="image"
+            placeholder="Select an image"
           />
 
           <span *ngIf="productAddForm.get('image')?.value"></span>
 
           <div
-            *ngIf="
-              productAddForm.get('image')?.invalid &&
-              productAddForm.get('image')?.touched
-            "
+            *ngIf="productAddForm.get('image')?.errors?.['required'] && productAddForm.get('image')?.touched"
+            class="validation-error"
           >
             Please select an image.
           </div>

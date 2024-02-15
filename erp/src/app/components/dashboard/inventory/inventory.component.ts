@@ -56,4 +56,7 @@ export class InventoryComponent {
   closeModal() {
     this.openForm = false;
   }
+  onSubmit() {
+    console.log('Profile tab', this.productAddForm.value);
+  }
 }
