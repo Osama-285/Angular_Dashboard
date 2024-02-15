@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { productInfo } from 'src/app/constants/inventory.constants';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 @Component({

@@ -96,7 +96,7 @@
       <h2>Add Product</h2>
     </div>
     <div class="formBody">
-      <form action="">
+      <form [formGroup]="productAddForm" (ngSubmit)="onSubmit()">
         <div class="code common">
           <label for="code">Code: </label>
           <input type="text" name="code" id="" />
@@ -111,11 +111,9 @@
             accept="image/*"
             formControlName="image"
           />
-          <!-- Display the selected image filename or other information -->
-          <span *ngIf="productAddForm.get('image')?.value">{{
-            productAddForm.get("image")?.value.name
-          }}</span>
-          <!-- Display error message if image field is invalid -->
+
+          <span *ngIf="productAddForm.get('image')?.value"></span>
+
           <div
             *ngIf="
               productAddForm.get('image')?.invalid &&
