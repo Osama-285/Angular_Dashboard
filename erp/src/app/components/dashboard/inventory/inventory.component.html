@@ -19,7 +19,7 @@
         </div>
       </div>
       <button type="submit" (click)="productForm()">
-        <span class="material-symbols-outlined"> add </span> Add Product
+        <span class="material-symbols-outlined"> add </span> Add Inventory
       </button>
     </div>
     <div class="inventory">
@@ -93,7 +93,7 @@
       <span class="material-symbols-outlined close" (click)="closeModal()"
         >close</span
       >
-      <h2>Add Product</h2>
+      <h2>Add Inventory</h2>
     </div>
     <div class="formBody">
       <form [formGroup]="productAddForm" (ngSubmit)="onSubmit()">
@@ -114,12 +114,12 @@
 
           <span *ngIf="productAddForm.get('image')?.value"></span>
 
-          <div
+          <!-- <div
             *ngIf="productAddForm.get('image')?.errors?.['required'] && productAddForm.get('image')?.touched"
             class="validation-error"
           >
             Please select an image.
-          </div>
+          </div> -->
         </div>
         <div class="brand common">
           <label for="brand">Brand: </label>
