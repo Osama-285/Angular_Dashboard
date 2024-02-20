@@ -142,7 +142,13 @@
           <input type="number" name="sales" id="" min="0" />
         </div>
         <div class="formBottom">
-          <button type="submit" class="savebtn">Add</button>
+          <button
+            [disabled]="!productAddForm.valid"
+            type="submit"
+            class="savebtn"
+          >
+            Add
+          </button>
           <button type="button" class="closeBtn" (click)="closeModal()">
             Cancel
           </button>

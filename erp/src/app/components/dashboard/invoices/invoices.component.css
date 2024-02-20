@@ -57,7 +57,6 @@
 .modal .modal-content .formBody .formBottom button[disabled] {
   opacity: 0.5;
   cursor: not-allowed;
-  /* Add more styles as needed */
 }
 .modal .modal-content .formBody .formBottom button[disabled]:hover {
   background-color: rgb(217, 240, 249);

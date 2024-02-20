@@ -101,3 +101,13 @@
 .modal .modal-content {
   height: 75% !important;
 }
+.modal .modal-content .formBody .formBottom button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.modal .modal-content .formBody .formBottom button[disabled]:hover {
+  background-color: rgb(217, 240, 249);
+  color: #0560fd;
+  opacity: 0.5;
+  cursor: pointer;
+}
