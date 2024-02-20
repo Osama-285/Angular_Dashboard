@@ -10,7 +10,7 @@
       id="searchBar"
       placeholder="Search Product"
     />
-    <button type="button addButton">Add Product</button>
+    <button type="button addButton" (click)="productForm()">Add Product</button>
   </div>
   <div class="productsBody">
     <div class="allCards">
@@ -39,4 +39,7 @@
       ></pagination-controls>
     </div>
   </div>
+</div>
+<div class="modal" [ngClass]="{ open: openForm }">
+  <div class="modal-content"></div>
 </div>

@@ -7,6 +7,7 @@ import { products } from 'src/app/constants/product.constants';
 })
 export class ProductComponent {
   protected allProduct = products;
+  openForm = false;
   searchText: string = '';
   psize = 12;
   currentPage = 1;
@@ -26,5 +27,9 @@ export class ProductComponent {
         );
       });
     });
+  }
+
+  productForm() {
+    this.openForm = true;
   }
 }
