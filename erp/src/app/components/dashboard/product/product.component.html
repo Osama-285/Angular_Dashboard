@@ -41,5 +41,12 @@
   </div>
 </div>
 <div class="modal" [ngClass]="{ open: openForm }">
-  <div class="modal-content"></div>
+  <div class="modal-content">
+    <div class="modal-top">
+      <span class="material-symbols-outlined close" (click)="closeModal()"
+        >close</span
+      >
+      <h2>Add Product</h2>
+    </div>
+  </div>
 </div>

@@ -32,4 +32,9 @@ export class ProductComponent {
   productForm() {
     this.openForm = true;
   }
+
+  closeModal() {
+    this.openForm = false;
+    // this.invoiceFormData.reset();
+  }
 }
